@@ -1,13 +1,46 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Archer-Book";
+  src: local("Archer-Book"), local("Archer-Book"),
+    url("./assets/fonts/Archer-Book-Pro.otf") format("opentype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Archer-Bold";
+  src: local("Archer-Bold"), local("Archer-Bold"),
+    url("./assets/fonts/Archer-Bold-Pro.otf") format("opentype");
+}
+
+body {
+  margin: 0;
+}
+
+.page-header {
+  display: flex;
+  justify-content: center;
+  font-family: Archer-Bold;
+  font-size: 48px;
+}
+
+.questions-text {
+  font-family: Archer-Bold;
+  font-size: 24px;
+  opacity: 1;
+}
+
+.answer-text {
+  font-family: Archer-Book;
+  font-size: 18px;
+  opacity: 1;
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.gutter {
+  margin: 20px;
 }

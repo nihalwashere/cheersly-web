@@ -1,0 +1,16 @@
+.add-to-slack-white-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 55px;
+  border-radius: 25px;
+  background-color: rgb(255, 227, 235);
+  cursor: pointer;
+  opacity: 1;
+}
+
+.add-to-slack-white-button-text {
+  font-family: Archer-Bold;
+  font-size: 24px;
+}
