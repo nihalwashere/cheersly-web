@@ -10,7 +10,7 @@ const NavBar = () => {
   return (
     <div className="navbar-container">
       <div className="navbar-text" onClick={handleLogoClick}>
-        say cheers
+        cheersly
       </div>
       <AddToSlackButton />
     </div>

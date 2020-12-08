@@ -25,13 +25,13 @@ const LandingContainer = () => {
         <div className="landing-features-description-container">
           <div className="landing-feature">
             say cheers to someone when they help you with something, shared
-            something you like or if you would like to appreciate someone's
+            something you like or if you would like to appreciate someone&apos;s
             efforts by using /cheers
           </div>
 
           <div className="landing-feature">
-            Get a birds eye view of your team's mood and keep track of who has
-            given or received the most beers in that month or all time
+            Get a birds eye view of your team&apos;s mood and keep track of who
+            has given or received the most beers in that month or all time
           </div>
         </div>
       </div>
