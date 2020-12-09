@@ -1,8 +1,11 @@
 import React from "react";
+import { SLACK_CLIENT_ID } from "../../utils/config";
 import "./styles.css";
 
 const AddToSlackButton = () => {
-  const handleAddToSlack = () => {};
+  const handleAddToSlack = async () => {
+    window.location.href = `https://slack.com/oauth/v2/authorize?client_id=${SLACK_CLIENT_ID}&scope=app_mentions:read,chat:write,commands,im:history,team:read,users.profile:read,users:read,users:read.email&user_scope=`;
+  };
 
   return (
     <div

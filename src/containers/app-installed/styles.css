@@ -1,0 +1,8 @@
+.app-installed-text {
+  display: flex;
+  justify-content: center;
+  font-size: 48px;
+  font-family: Archer-Bold;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}

@@ -12,7 +12,10 @@ const NavBar = () => {
       <div className="navbar-text" onClick={handleLogoClick}>
         cheersly
       </div>
-      <AddToSlackButton />
+
+      {!String(window.location.href).includes("/app-installed") && (
+        <AddToSlackButton />
+      )}
     </div>
   );
 };

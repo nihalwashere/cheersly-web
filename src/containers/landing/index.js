@@ -31,7 +31,7 @@ const LandingContainer = () => {
 
           <div className="landing-feature">
             Get a birds eye view of your team&apos;s mood and keep track of who
-            has given or received the most beers in that month or all time
+            has given or received the most cheers in that month or all time
           </div>
         </div>
       </div>
