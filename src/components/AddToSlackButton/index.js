@@ -4,7 +4,7 @@ import "./styles.css";
 
 const AddToSlackButton = () => {
   const handleAddToSlack = async () => {
-    window.location.href = `https://slack.com/oauth/v2/authorize?client_id=${SLACK_CLIENT_ID}&scope=app_mentions:read,chat:write,commands,im:history,team:read,users.profile:read,users:read,users:read.email&user_scope=`;
+    window.location.href = `https://slack.com/oauth/v2/authorize?client_id=${SLACK_CLIENT_ID}&scope=app_mentions:read,chat:write,commands,im:history,team:read,users.profile:read,users:read,users:read.email,incoming-webhook&user_scope=`;
   };
 
   return (
