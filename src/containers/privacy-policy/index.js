@@ -206,7 +206,7 @@ const PrivacyPolicyContainer = () => {
         <div className="answer-text margin-top-10">
           You can request for us to send, remove or modify any information about
           your account. To permanently remove your data, you must email us at
-          support@cheersly.in, and we will remove your data within 30 days of
+          support@cheersly.club, and we will remove your data within 30 days of
           notice.
         </div>
 
@@ -218,7 +218,7 @@ const PrivacyPolicyContainer = () => {
           any personal information to our Service or agree to our Terms of
           Service and Privacy Policy. If you have provided personal information
           and no longer consent to its use or disclosure as outlined herein,
-          please notify us at support@cheersly.in.
+          please notify us at support@cheersly.club.
         </div>
 
         <div className="questions-text margin-top-20">
@@ -245,10 +245,10 @@ const PrivacyPolicyContainer = () => {
           If there are any questions regarding this privacy policy you may
           contact us here:{" "}
           <a
-            href="mailto:support@cheersly.in?subject=Privacy Policy"
+            href="mailto:support@cheersly.club?subject=Privacy Policy"
             style={{ color: "inherit" }}
           >
-            support@cheersly.in
+            support@cheersly.club
           </a>
         </div>
 

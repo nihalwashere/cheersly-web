@@ -26,12 +26,12 @@ const LandingContainer = () => {
           <div className="landing-feature">
             say cheers to someone when they help you with something, shared
             something you like or if you would like to appreciate someone&apos;s
-            efforts by using /cheers
+            efforts by using /cheers command
           </div>
 
           <div className="landing-feature">
             Get a birds eye view of your team&apos;s mood and keep track of who
-            has given or received the most cheers in that month or all time
+            has given or received the most cheers
           </div>
         </div>
       </div>
