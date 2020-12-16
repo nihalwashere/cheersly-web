@@ -6,6 +6,7 @@ import LandingContainer from "../landing";
 import TermsOfServiceContainer from "../terms-of-service";
 import PrivacyPolicyContainer from "../privacy-policy";
 import AppInstalledContainer from "../app-installed";
+import ContactUsContainer from "../contact-us";
 
 // components
 import NavBar from "../../components/NavBar";
@@ -26,6 +27,7 @@ const RootContainer = () => {
             path="/app-installed"
             component={AppInstalledContainer}
           />
+          <Route exact path="/contact" component={ContactUsContainer} />
         </Switch>
       </Router>
 

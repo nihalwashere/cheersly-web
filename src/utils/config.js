@@ -1,4 +1,4 @@
-export const API_BASE_URL = "https://cheersly.herokuapp.com/api/v1"; // prod
+export const API_BASE_URL = "https://www.cheersly.club/api/v1"; // prod
 
 // export const API_BASE_URL = "http://localhost:7000/api/v1"; // local
 

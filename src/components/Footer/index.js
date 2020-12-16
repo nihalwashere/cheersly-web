@@ -14,6 +14,10 @@ const Footer = () => {
     window.location.href = "/tos";
   };
 
+  const handleContactUs = () => {
+    window.location.href = "/contact";
+  };
+
   return (
     <div>
       <div className="footer-container">
@@ -27,13 +31,8 @@ const Footer = () => {
           <div className="footer-text" onClick={handleTermsOfService}>
             Terms of Service
           </div>
-          <div className="footer-text">
-            <a
-              href="mailto:support@cheeersly.club?subject=Query"
-              style={{ color: "inherit" }}
-            >
-              Contact Us
-            </a>
+          <div className="footer-text" onClick={handleContactUs}>
+            Contact Us
           </div>
         </div>
       </div>
