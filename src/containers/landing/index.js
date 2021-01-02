@@ -15,7 +15,7 @@ const LandingContainer = () => {
       </div>
 
       <div className="landing-description-text">
-        Push your team forward, boost their morale, say cheers and spread
+        push your team forward, boost their morale, say cheers and spread
         happiness!
       </div>
 
@@ -24,15 +24,91 @@ const LandingContainer = () => {
 
         <div className="landing-features-description-container">
           <div className="landing-feature">
-            say cheers to someone when they help you with something, shared
-            something you like or if you would like to appreciate someone&apos;s
-            efforts by using /cheers command
+            say cheers to your peers when you would like to appreciate their
+            efforts
           </div>
 
           <div className="landing-feature">
-            Get a birds eye view of your team&apos;s mood and keep track of who
+            get a birds eye view of your team&apos;s mood and keep track of who
             has given or received the most cheers
           </div>
+
+          <div className="landing-feature">
+            you should share in some cheers with your peers because it makes the
+            recipient feel good about themselves and this can help to boost
+            their performance.
+          </div>
+
+          <div className="landing-feature">
+            cheersly provides the kind of positive experience or uplift that can
+            increase people&apos;s morale, motivation and engagement, and renew
+            their commitment to their organisation
+          </div>
+        </div>
+      </div>
+
+      <div className="pricing-container">
+        <div className="pricing-header-text">Pricing</div>
+        <div className="pricing-price-text">$10 / 100 users / team</div>
+      </div>
+
+      <div className="pricing-question-answers-container">
+        <div className="pricing-question-answers-header-text">
+          Questions and Answers
+        </div>
+
+        <div className="pricing-question">
+          What happens when the trial is over? Will I be charged?
+        </div>
+        <div className="pricing-answer">
+          After your trial ends you won&apos;t be charged because we don&apos;t
+          require a credit card to try cheersly. If you don&apos;t upgrade and
+          your trial expires, people will receive a response from cheersly
+          letting them know the trial is over.
+        </div>
+
+        <div className="pricing-question">Do I have to pay after trial?</div>
+        <div className="pricing-answer">
+          Yes. After 7 days of trial you will have to purchase a subscription in
+          order to use cheersly.
+        </div>
+
+        <div className="pricing-question">
+          What if we need more than 14 days to try out cheersly?
+        </div>
+        <div className="pricing-answer">
+          We would be more than happy to extend a trial if you need more time.
+          Just contact <b>support@cheersly.club</b> and we&apos;ll make it
+          happen.
+        </div>
+
+        <div className="pricing-question">
+          How do I get a discount for a not-for-profit?
+        </div>
+        <div className="pricing-answer">
+          There will be an option to apply for a discounted plan after you start
+          your trial. We have a few fixed monthly rates we charge non-profits
+          based on team size. We&apos;re very flexible on finding a rate that
+          works best for you. Just contact <b>support@cheersly.club</b>
+        </div>
+
+        <div className="pricing-question">
+          I have 10/50/100/500 users in my Slack workspace, how much do I pay?
+        </div>
+        <div className="pricing-answer">
+          You pay $10 for each 100 users that are in your Slack workspace: for
+          example if you have 123 users in your team you will pay $12.30 per
+          month and if you have 50 users in your team then you will pay $5 per
+          month. Users in your workspace are counted at the end of each billing
+          period. Bots, disabled and guest users are not counted for billing. So
+          you don&apos;t pay for anyone on your team who hasn&apos;t used
+          cheersly.
+        </div>
+
+        <div className="pricing-question">Do you have a refund policy?</div>
+        <div className="pricing-answer">
+          Yes, we have a 30 day money back guarantee if you are not satisfied
+          with our services. Just contact <b>support@cheersly.club</b>
         </div>
       </div>
 

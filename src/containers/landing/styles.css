@@ -31,7 +31,7 @@
 .landing-feature {
   font-family: Archer-Bold;
   font-size: 24px;
-  margin: 100px;
+  margin: 40px;
 }
 
 .landing-say-cheers-container {
@@ -52,4 +52,47 @@
 
 .landing-add-to-slack-container {
   margin-bottom: 10%;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pricing-header-text {
+  font-family: Archer-Bold;
+  font-size: 108px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.pricing-price-text {
+  font-family: Archer-Bold;
+  font-size: 84px;
+}
+
+.pricing-question-answers-container {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+}
+
+.pricing-question-answers-header-text {
+  font-family: Archer-Bold;
+  font-size: 32px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.pricing-question {
+  font-family: Archer-Bold;
+  font-size: 24px;
+  margin-top: 2%;
+}
+
+.pricing-answer {
+  font-family: monospace;
+  font-size: 18px;
 }

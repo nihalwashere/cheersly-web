@@ -170,27 +170,28 @@ const PrivacyPolicyContainer = () => {
           personally identifiable information. This does not include trusted
           third parties who assist us in operating our website, conducting our
           business, or servicing you, so long as those parties agree to keep
-          this information confidential.
-          {/* An example is our payment processor.
-      They use your email address and name to send you receipts for your
-      payments. */}
+          this information confidential. An example is our payment processor.
+          They use your email address and name to send you receipts for your
+          payments.
         </div>
 
         <div className="answer-text margin-top-10">
           <ul>
-            {/* <li>
-          Razorpay
-          <a href="https://www.razorpay.com">(https://www.razorpay.com)</a>
-        </li>
-        <ul>
-          <li>
-            Billing and payment processor for purchases. (Administrator
-            contact data only)
-          </li>
-        </ul> */}
+            <li>
+              Stripe{" "}
+              <a href="https://www.stripe.com">(https://www.stripe.com)</a>
+            </li>
+            <ul>
+              <li>
+                Billing and payment processor for purchases. (Administrator
+                contact data only)
+              </li>
+            </ul>
+
+            <br />
 
             <li>
-              Heroku
+              Heroku{" "}
               <a href="https://www.heroku.com">(https://www.heroku.com)</a>
             </li>
             <ul>
@@ -253,7 +254,7 @@ const PrivacyPolicyContainer = () => {
         </div>
 
         <div className="questions-text margin-top-20">
-          This policy is effective as of 1st December, 2020.
+          This policy is effective as of 1st January, 2021.
         </div>
       </div>
     </div>
