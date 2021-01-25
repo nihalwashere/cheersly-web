@@ -42,7 +42,7 @@ const LandingContainer = () => {
           <div className="landing-feature">
             cheersly provides the kind of positive experience or uplift that can
             increase people&apos;s morale, motivation and engagement, and renew
-            their commitment to their organisation
+            their commitment to their organization
           </div>
         </div>
       </div>
@@ -50,6 +50,11 @@ const LandingContainer = () => {
       <div className="pricing-container">
         <div className="pricing-header-text">Pricing</div>
         <div className="pricing-price-text">$10 / 100 users / team</div>
+        <div className="pricing-trial-text">try FREE for 7 days</div>
+        <div className="pricing-trial-description-text">
+          no credit card required or complicated tiered plans and if you are not
+          happy you can cancel at anytime
+        </div>
       </div>
 
       <div className="pricing-question-answers-container">
@@ -74,7 +79,7 @@ const LandingContainer = () => {
         </div>
 
         <div className="pricing-question">
-          What if we need more than 14 days to try out cheersly?
+          What if we need more than 7 days to try out cheersly?
         </div>
         <div className="pricing-answer">
           We would be more than happy to extend a trial if you need more time.

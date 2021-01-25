@@ -65,12 +65,23 @@
   font-family: Archer-Bold;
   font-size: 108px;
   margin-top: 2%;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
 .pricing-price-text {
   font-family: Archer-Bold;
   font-size: 84px;
+  margin-bottom: 3%;
+}
+
+.pricing-trial-text {
+  font-family: Archer-Bold;
+  font-size: 48px;
+}
+
+.pricing-trial-description-text {
+  font-family: Archer-Bold;
+  font-size: 24px;
 }
 
 .pricing-question-answers-container {
