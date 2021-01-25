@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "cheersly-web",
+    "develop": "dev-cheersly-web"
+  }
+}
