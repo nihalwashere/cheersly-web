@@ -2,10 +2,6 @@ import React from "react";
 import "./styles.css";
 
 const Footer = () => {
-  const handleMadeInIndiaClick = () => {
-    window.location.href = "/";
-  };
-
   const handlePrivacyPolicy = () => {
     window.location.href = "/privacy";
   };
@@ -22,9 +18,6 @@ const Footer = () => {
     <div>
       <div className="footer-container">
         <div className="footer-items-container">
-          <div className="footer-text" onClick={handleMadeInIndiaClick}>
-            Made in India
-          </div>
           <div className="footer-text" onClick={handlePrivacyPolicy}>
             Privacy Policy
           </div>

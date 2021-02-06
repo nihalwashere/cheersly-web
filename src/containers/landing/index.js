@@ -120,7 +120,7 @@ const LandingContainer = () => {
       <div className="landing-say-cheers-container">
         <div className="landing-say-cheers-text">say cheers</div>
         <div className="landing-add-to-slack-container">
-          <AddToSlackButton />
+          <AddToSlackButton type="light" />
         </div>
       </div>
     </div>

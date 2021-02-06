@@ -7,7 +7,6 @@ const ImageAssets = {
   illustration_2: require("./illustration_2.jpg"),
   illustration_3: require("./illustration_3.jpg"),
   illustration_4: require("./illustration_4.jpg"),
-  banner: require("./banner.png"),
 };
 
 export default ImageAssets;

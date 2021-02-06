@@ -1,4 +1,4 @@
-.add-to-slack-white-button-container {
+.add-to-slack-light-button-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +10,24 @@
   opacity: 1;
 }
 
-.add-to-slack-white-button-text {
+.add-to-slack-light-button-text {
+  font-family: Archer-Bold;
+  font-size: 24px;
+}
+
+.add-to-slack-dark-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 55px;
+  border-radius: 25px;
+  background-color: yellow;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.add-to-slack-dark-button-text {
   font-family: Archer-Bold;
   font-size: 24px;
 }
