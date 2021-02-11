@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { SLACK_CLIENT_ID } from "../../utils/config";
+import { SLACK_OAUTH_URL } from "../../utils/config";
 import "./styles.css";
 
 const AddToSlackButton = (props) => {
   const { type } = props;
 
   const handleAddToSlack = async () => {
-    window.location.href = `https://slack.com/oauth/v2/authorize?client_id=${SLACK_CLIENT_ID}&scope=app_mentions:read,chat:write,commands,im:history,team:read,users:read,users:read.email,incoming-webhook&user_scope=`;
+    window.location.href = SLACK_OAUTH_URL;
   };
 
   return (
