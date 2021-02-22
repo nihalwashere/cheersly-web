@@ -19,3 +19,9 @@
   color: #ffffff;
   cursor: pointer;
 }
+
+@media all and (max-width: 600px) {
+  .footer-items-container {
+    flex-direction: column;
+  }
+}

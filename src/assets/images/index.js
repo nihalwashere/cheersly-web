@@ -1,12 +1,15 @@
-/* eslint-disable */
+import logo from "./logo.png";
+import AppHome from "./AppHome.png";
+import Cheers from "./Cheers.png";
+import BuildCheerfulTeams from "./BuildCheerfulTeams.png";
+import PollClosed from "./PollClosed.png";
 
 const ImageAssets = {
-  logo: require("./logo.jpg"),
-  happy_girl: require("./happy_girl.jpg"),
-  illustration_1: require("./illustration_1.jpg"),
-  illustration_2: require("./illustration_2.jpg"),
-  illustration_3: require("./illustration_3.jpg"),
-  illustration_4: require("./illustration_4.jpg"),
+  logo,
+  AppHome,
+  Cheers,
+  BuildCheerfulTeams,
+  PollClosed,
 };
 
 export default ImageAssets;

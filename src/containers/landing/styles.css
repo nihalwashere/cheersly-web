@@ -1,37 +1,120 @@
 .landing-header-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin: 1%;
 }
 
 .landing-header-text {
-  font-family: Archer-Bold;
-  font-size: 108px;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 600;
+  width: 100%;
+  margin: 1%;
+}
+
+.landing-header-image {
+  max-width: 60%;
+  height: auto;
+  margin: 1%;
 }
 
 .landing-description-text {
   display: flex;
   margin: 2%;
-  font-family: Archer-Bold;
-  font-size: 48px;
+  font-size: 1em;
+}
+
+.landing-features-root-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .landing-features-container {
   display: flex;
-  justify-content: space-evenly;
-  background-color: bisque;
-}
-
-.landing-features-description-container {
-  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
 .landing-feature {
-  font-family: Archer-Bold;
-  font-size: 24px;
-  margin: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.landing-feature-image {
+  max-width: 60%;
+  height: auto;
+  margin: 1%;
+}
+
+.pricing-root-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.pricing-header-text {
+  font-size: 2em;
+  font-weight: 600;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.pricing-price-text {
+  font-size: 2em;
+  margin-bottom: 5%;
+}
+
+.pricing-trial-text {
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 2%;
+}
+
+.pricing-trial-description-text {
+  font-size: 1em;
+  text-align: left;
+}
+
+.pricing-question-answers-container {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  width: 50%;
+}
+
+.pricing-question-answers-header-text {
+  font-size: 1em;
+  font-weight: 600;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.pricing-question {
+  font-size: 1em;
+  font-weight: 600;
+  margin-top: 2%;
+}
+
+.pricing-answer {
+  font-size: 0.9em;
 }
 
 .landing-say-cheers-container {
@@ -44,7 +127,7 @@
 
 .landing-say-cheers-text {
   font-family: Archer-Bold;
-  font-size: 108px;
+  font-size: 5em;
   color: #ffffff;
   margin-top: 10%;
   margin-bottom: 10%;
@@ -54,56 +137,21 @@
   margin-bottom: 10%;
 }
 
-.pricing-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+@media all and (max-width: 1000px) {
+  .landing-header-container {
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
-.pricing-header-text {
-  font-family: Archer-Bold;
-  font-size: 108px;
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
+  .landing-header-text {
+    width: 90%;
+    margin-bottom: 2%;
+  }
 
-.pricing-price-text {
-  font-family: Archer-Bold;
-  font-size: 84px;
-  margin-bottom: 3%;
-}
+  .landing-header-image {
+    width: 90%;
 
-.pricing-trial-text {
-  font-family: Archer-Bold;
-  font-size: 48px;
-}
-
-.pricing-trial-description-text {
-  font-family: Archer-Bold;
-  font-size: 24px;
-}
-
-.pricing-question-answers-container {
-  display: flex;
-  flex-direction: column;
-  margin: 5%;
-}
-
-.pricing-question-answers-header-text {
-  font-family: Archer-Bold;
-  font-size: 32px;
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-
-.pricing-question {
-  font-family: Archer-Bold;
-  font-size: 24px;
-  margin-top: 2%;
-}
-
-.pricing-answer {
-  font-family: monospace;
-  font-size: 18px;
+    margin: 0;
+  }
 }
