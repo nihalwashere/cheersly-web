@@ -1,6 +1,7 @@
 {
   "projects": {
     "default": "cheersly-web-dev-5987b",
-    "develop": "cheersly-web-dev-5987b"
+    "develop": "cheersly-web-dev-5987b",
+    "prod": "cheersly-web-prod"
   }
 }
