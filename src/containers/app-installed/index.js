@@ -15,14 +15,14 @@ const AppInstalledContainer = () => {
 
   return (
     <div style={{ height: 600 }}>
-      <div className="app-installed-text">
-        cheersly was installed to your workspace successfully
-      </div>
-
       <div className="app-installed-text">WELCOME TO THE CLUB!</div>
 
       <div className="app-installed-text">
-        we have DM&apos;ed you the onboarding instructions
+        Cheersly was installed to your workspace successfully
+      </div>
+
+      <div className="app-installed-text">
+        We have shared the onboarding instructions
       </div>
     </div>
   );
