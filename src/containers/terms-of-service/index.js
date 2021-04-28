@@ -44,8 +44,8 @@ const TermsOfServiceContainer = () => {
         <div className="questions-text margin-top-20">Payments</div>
 
         <div className="answer-text margin-top-10">
-          Our billing and payments processing infrastructure is on Stripe{" "}
-          <a href="https://www.stripe.com">(https://www.stripe.com)</a>.
+          Our billing and payments processing infrastructure is on PayPal{" "}
+          <a href="https://www.paypal.com">(https://www.paypal.com)</a>.
         </div>
 
         <div className="questions-text margin-top-20">Refund policy</div>

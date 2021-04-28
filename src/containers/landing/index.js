@@ -15,7 +15,7 @@ const LandingContainer = () => {
         <div className="landing-header-image">
           <img
             src={ImageAssets.BuildCheerfulTeams}
-            alt="Build cheerful teams"
+            alt="Cheersly | Build cheerful teams"
             height="100%"
             width="100%"
           />
@@ -28,7 +28,7 @@ const LandingContainer = () => {
             <div className="landing-feature-image">
               <img
                 src={ImageAssets.Cheers}
-                alt="Happy Girl"
+                alt="Cheersly | Say cheers"
                 height="100%"
                 width="100%"
               />
@@ -49,8 +49,30 @@ const LandingContainer = () => {
           <div className="landing-feature">
             <div className="landing-feature-image">
               <img
+                src={ImageAssets.Feedback}
+                alt="Cheersly | Feedback"
+                height="100%"
+                width="100%"
+              />
+            </div>
+          </div>
+
+          <div className="landing-feature">
+            <div className="landing-feature-image">
+              <img
                 src={ImageAssets.AppHome}
-                alt="Happy Girl"
+                alt="Cheersly | App Home"
+                height="100%"
+                width="100%"
+              />
+            </div>
+          </div>
+
+          <div className="landing-feature">
+            <div className="landing-feature-image">
+              <img
+                src={ImageAssets.AppLeaderboard}
+                alt="Cheersly | App Leaderboard"
                 height="100%"
                 width="100%"
               />
@@ -62,7 +84,9 @@ const LandingContainer = () => {
       <div className="pricing-root-container">
         <div className="pricing-container">
           <div className="pricing-header-text">Pricing</div>
-          <div className="pricing-price-text">$1 / user / team</div>
+          <div className="pricing-price-text">
+            <span style={{ fontWeight: 900, fontSize: 48 }}>$49</span> / month
+          </div>
           <div className="pricing-trial-text">try FREE for 7 days</div>
           <div className="pricing-trial-description-text">
             No credit card required or complicated tiered plans and if you are
@@ -115,13 +139,8 @@ const LandingContainer = () => {
             I have 10/50/100/500 users in my Slack workspace, how much do I pay?
           </div>
           <div className="pricing-answer">
-            You pay $1 for each user that are in your Slack workspace: for
-            example if you have 123 users in your team you will pay $123 per
-            month and if you have 50 users in your team then you will pay $50
-            per month. Users in your workspace are counted at the end of each
-            billing period. Bots, disabled and guest users are not counted for
-            billing. So you don&apos;t pay for anyone on your team who
-            hasn&apos;t used cheersly.
+            You pay a flat price of $49 each month irrespective of the number of
+            users in your workspace.
           </div>
 
           <div className="pricing-question">Do you have a refund policy?</div>

@@ -183,8 +183,8 @@ const PrivacyPolicyContainer = () => {
           <div className="answer-text margin-top-10">
             <ul>
               <li>
-                Stripe{" "}
-                <a href="https://www.stripe.com">(https://www.stripe.com)</a>
+                PayPal{" "}
+                <a href="https://www.paypal.com">(https://www.paypal.com)</a>
               </li>
               <ul>
                 <li>

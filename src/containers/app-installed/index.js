@@ -14,7 +14,7 @@ const AppInstalledContainer = () => {
   }, []);
 
   return (
-    <div style={{ height: 600 }}>
+    <div style={{ minHeight: "100vh" }}>
       <div className="app-installed-text">WELCOME TO THE CLUB!</div>
 
       <div className="app-installed-text">

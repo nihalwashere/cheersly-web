@@ -10,7 +10,7 @@ const ContactUsContainer = () => {
           Please feel free to reach out to us at <b>support@cheersly.club</b>
         </div>
 
-        <div style={{ height: 600 }} />
+        <div style={{ minHeight: "100vh" }} />
       </div>
     </div>
   );
