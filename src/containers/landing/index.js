@@ -15,7 +15,8 @@ const LandingContainer = () => {
         <div className="landing-header-image">
           <img
             src={ImageAssets.BuildCheerfulTeams}
-            alt="Cheersly | Build cheerful teams"
+            alt=""
+            loading="lazy"
             height="100%"
             width="100%"
           />
@@ -28,7 +29,8 @@ const LandingContainer = () => {
             <div className="landing-feature-image">
               <img
                 src={ImageAssets.Cheers}
-                alt="Cheersly | Say cheers"
+                alt=""
+                loading="lazy"
                 height="100%"
                 width="100%"
               />
@@ -39,7 +41,8 @@ const LandingContainer = () => {
             <div className="landing-feature-image">
               <img
                 src={ImageAssets.PollClosed}
-                alt="Cheersly | Submit a Poll"
+                alt=""
+                loading="lazy"
                 height="100%"
                 width="100%"
               />
@@ -50,7 +53,8 @@ const LandingContainer = () => {
             <div className="landing-feature-image">
               <img
                 src={ImageAssets.Feedback}
-                alt="Cheersly | Feedback"
+                alt=""
+                loading="lazy"
                 height="100%"
                 width="100%"
               />
@@ -61,7 +65,8 @@ const LandingContainer = () => {
             <div className="landing-feature-image">
               <img
                 src={ImageAssets.AppHome}
-                alt="Cheersly | App Home"
+                alt=""
+                loading="lazy"
                 height="100%"
                 width="100%"
               />
@@ -72,7 +77,8 @@ const LandingContainer = () => {
             <div className="landing-feature-image">
               <img
                 src={ImageAssets.AppLeaderboard}
-                alt="Cheersly | App Leaderboard"
+                alt=""
+                loading="lazy"
                 height="100%"
                 width="100%"
               />
