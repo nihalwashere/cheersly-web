@@ -15,7 +15,8 @@ const LandingContainer = () => {
         <div className="landing-header-image">
           <img
             src={ImageAssets.BuildCheerfulTeams}
-            alt="Cheersly | Build cheerful teams"
+            alt=""
+            loading="lazy"
             height="100%"
             width="100%"
           />
@@ -28,7 +29,8 @@ const LandingContainer = () => {
             <div className="landing-feature-image">
               <img
                 src={ImageAssets.Cheers}
-                alt="Cheersly | Say cheers"
+                alt=""
+                loading="lazy"
                 height="100%"
                 width="100%"
               />
@@ -39,7 +41,8 @@ const LandingContainer = () => {
             <div className="landing-feature-image">
               <img
                 src={ImageAssets.PollClosed}
-                alt="Cheersly | Submit a Poll"
+                alt=""
+                loading="lazy"
                 height="100%"
                 width="100%"
               />
@@ -50,7 +53,8 @@ const LandingContainer = () => {
             <div className="landing-feature-image">
               <img
                 src={ImageAssets.Feedback}
-                alt="Cheersly | Feedback"
+                alt=""
+                loading="lazy"
                 height="100%"
                 width="100%"
               />
@@ -61,7 +65,8 @@ const LandingContainer = () => {
             <div className="landing-feature-image">
               <img
                 src={ImageAssets.AppHome}
-                alt="Cheersly | App Home"
+                alt=""
+                loading="lazy"
                 height="100%"
                 width="100%"
               />
@@ -72,7 +77,8 @@ const LandingContainer = () => {
             <div className="landing-feature-image">
               <img
                 src={ImageAssets.AppLeaderboard}
-                alt="Cheersly | App Leaderboard"
+                alt=""
+                loading="lazy"
                 height="100%"
                 width="100%"
               />
@@ -85,7 +91,7 @@ const LandingContainer = () => {
         <div className="pricing-container">
           <div className="pricing-header-text">Pricing</div>
           <div className="pricing-price-text">
-            <span style={{ fontWeight: 900, fontSize: 48 }}>$49</span> / month
+            <span style={{ fontWeight: 900, fontSize: 48 }}>$9</span> / month
           </div>
           <div className="pricing-trial-text">try FREE for 7 days</div>
           <div className="pricing-trial-description-text">
@@ -139,7 +145,7 @@ const LandingContainer = () => {
             I have 10/50/100/500 users in my Slack workspace, how much do I pay?
           </div>
           <div className="pricing-answer">
-            You pay a flat price of $49 each month irrespective of the number of
+            You pay a flat price of $9 each month irrespective of the number of
             users in your workspace.
           </div>
 
