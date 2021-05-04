@@ -87,7 +87,7 @@ const LandingContainer = () => {
         </div>
       </div>
 
-      <div className="pricing-root-container">
+      {/* <div className="pricing-root-container">
         <div className="pricing-container">
           <div className="pricing-header-text">Pricing</div>
           <div className="pricing-price-text">
@@ -155,7 +155,7 @@ const LandingContainer = () => {
             with our services. Just contact <b>support@cheersly.club</b>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="landing-say-cheers-container">
         <div className="landing-say-cheers-text">say cheers</div>

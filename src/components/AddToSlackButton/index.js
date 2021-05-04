@@ -1,13 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
-import { SLACK_OAUTH_URL } from "../../utils/config";
+import InstallationChecklistModal from "../InstallationChecklistModal";
 import "./styles.css";
 
 const AddToSlackButton = (props) => {
   const { type } = props;
 
+  const [
+    shouldShowInstallationChecklistModal,
+    setShouldShowInstallationChecklistModal,
+  ] = useState(false);
+
   const handleAddToSlack = async () => {
-    window.location.href = SLACK_OAUTH_URL;
+    if (shouldShowInstallationChecklistModal) {
+      return;
+    }
+
+    setShouldShowInstallationChecklistModal(true);
+  };
+
+  const handleCloseInstallationChecklistModal = () => {
+    setShouldShowInstallationChecklistModal(false);
   };
 
   return (
@@ -28,6 +41,13 @@ const AddToSlackButton = (props) => {
       >
         Add to Slack
       </div>
+
+      {shouldShowInstallationChecklistModal && (
+        <InstallationChecklistModal
+          open={shouldShowInstallationChecklistModal}
+          handleClose={handleCloseInstallationChecklistModal}
+        />
+      )}
     </div>
   );
 };
