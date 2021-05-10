@@ -87,11 +87,11 @@ const LandingContainer = () => {
         </div>
       </div>
 
-      {/* <div className="pricing-root-container">
+      <div className="pricing-root-container">
         <div className="pricing-container">
           <div className="pricing-header-text">Pricing</div>
           <div className="pricing-price-text">
-            <span style={{ fontWeight: 900, fontSize: 48 }}>$9</span> / month
+            <span style={{ fontWeight: 900, fontSize: 48 }}>$19</span> / month
           </div>
           <div className="pricing-trial-text">try FREE for 7 days</div>
           <div className="pricing-trial-description-text">
@@ -145,7 +145,7 @@ const LandingContainer = () => {
             I have 10/50/100/500 users in my Slack workspace, how much do I pay?
           </div>
           <div className="pricing-answer">
-            You pay a flat price of $9 each month irrespective of the number of
+            You pay a flat price of $19 each month irrespective of the number of
             users in your workspace.
           </div>
 
@@ -155,7 +155,7 @@ const LandingContainer = () => {
             with our services. Just contact <b>support@cheersly.club</b>
           </div>
         </div>
-      </div> */}
+      </div>
 
       <div className="landing-say-cheers-container">
         <div className="landing-say-cheers-text">say cheers</div>
