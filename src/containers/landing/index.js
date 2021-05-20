@@ -1,6 +1,5 @@
 import React from "react";
-import ImageAssets from "../../assets/images";
-import AddToSlackButton from "../../components/AddToSlackButton";
+import RequestEarlyAccessButton from "../../components/RequestEarlyAccessButton";
 import "./styles.css";
 
 const LandingContainer = () => {
@@ -8,22 +7,81 @@ const LandingContainer = () => {
     <div>
       <div className="landing-header-container">
         <div className="landing-header-text">
-          Push your team forward, boost their morale, say cheers and spread
-          happiness!
+          Build cheerful teams in Slack.
         </div>
 
-        <div className="landing-header-image">
-          <img
-            src={ImageAssets.BuildCheerfulTeams}
-            alt=""
-            loading="lazy"
-            height="100%"
-            width="100%"
-          />
+        <div className="landing-header-description">
+          Employee engagement and peer recognition platform to build an awesome
+          remote work culture.
         </div>
       </div>
 
-      <div className="landing-features-root-container">
+      <div className="landing-feature-problem-root-container">
+        <div className="landing-feature-problem-container">
+          According to a case study, most millennials quit because they feel no
+          one said thank you, they feel unappreciated. Let&apos;s make it a
+          little easier for great millennial staff to stick around.
+        </div>
+      </div>
+
+      <div className="landing-feature-card-container">
+        <div className="landing-feature-card-row">
+          <div className="landing-feature-card">
+            ✔️ Cheersly is a one stop shop to all your team&apos;s communication
+            needs. Give cheers, conduct polls, share feedback, exchange rewards
+            and much more.
+          </div>
+
+          <div className="landing-feature-card">
+            ✔️ Cheersly provides the kind of positive experience or uplift that
+            can increase people&apos;s morale, motivation, engagement and renew
+            their commitment to their organization.
+          </div>
+        </div>
+
+        <div className="landing-feature-card-row">
+          <div className="landing-feature-card">
+            ✔️ By implementing gratitude into company culture, employees are
+            more willing to spread their positive feelings with others.
+          </div>
+          <div className="landing-feature-card">
+            ✔️ Anonymity provides employees the freedom to express their
+            opinions without having to face those mental blocks, getting at the
+            truth of their sentiments.
+          </div>
+        </div>
+
+        <div className="landing-feature-card-row">
+          <div className="landing-feature-card">
+            ✔️ Support your company&apos;s vision and shape its culture by
+            defining company values.
+          </div>
+          <div className="landing-feature-card">
+            ✔️ Boost your team&apos;s morale!
+          </div>
+        </div>
+
+        <div className="landing-feature-card-row">
+          <div className="landing-feature-card">
+            ✔️ Build a healthier work environment!
+          </div>
+          <div className="landing-feature-card">
+            ✔️ Build an awesome remote work culture!
+          </div>
+        </div>
+      </div>
+
+      <div className="landing-request-early-access-container">
+        <div className="landing-request-early-access-header-text">
+          Help us shape the future of remote work culture.
+        </div>
+
+        <div className="landing-request-early-access-button-container">
+          <RequestEarlyAccessButton type="light" />
+        </div>
+      </div>
+
+      {/* <div className="landing-features-root-container">
         <div className="landing-features-container">
           <div className="landing-feature">
             <div className="landing-feature-image">
@@ -85,9 +143,9 @@ const LandingContainer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="pricing-root-container">
+      {/* <div className="pricing-root-container">
         <div className="pricing-container">
           <div className="pricing-header-text">Pricing</div>
           <div className="pricing-price-text">
@@ -155,14 +213,14 @@ const LandingContainer = () => {
             with our services. Just contact <b>support@cheersly.club</b>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="landing-say-cheers-container">
+      {/* <div className="landing-say-cheers-container">
         <div className="landing-say-cheers-text">say cheers</div>
         <div className="landing-add-to-slack-container">
-          <AddToSlackButton type="light" />
+          <RequestEarlyAccessButton type="light" />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

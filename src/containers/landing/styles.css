@@ -10,131 +10,78 @@
   text-align: center;
   font-size: 3em;
   font-weight: 600;
-  width: 100%;
-  margin: 1%;
+  width: 80%;
+  margin-bottom: 1%;
 }
 
-.landing-header-image {
-  max-width: 50%;
-  height: auto;
-  margin: 1%;
-}
-
-.landing-description-text {
-  display: flex;
-  margin: 2%;
-  font-size: 1em;
-}
-
-.landing-features-root-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.landing-features-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.landing-feature {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-
-.landing-feature-image {
-  max-width: 50%;
-  height: auto;
-  margin: 1%;
-}
-
-.pricing-root-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.pricing-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 50%;
-}
-
-.pricing-header-text {
-  font-size: 2em;
+.landing-header-description {
+  text-align: center;
+  font-size: 1.2em;
   font-weight: 600;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  width: 80%;
 }
 
-.pricing-price-text {
-  font-size: 2em;
+.landing-feature-card-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: 5%;
+}
+
+.landing-feature-card-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  width: 80%;
+}
+
+.landing-feature-card {
+  width: 40%;
+
+  padding: 1%;
+
+  margin-bottom: 5%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.landing-feature-problem-root-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 5%;
   margin-bottom: 5%;
 }
 
-.pricing-trial-text {
-  font-size: 1em;
-  font-weight: 600;
-  margin-bottom: 2%;
-}
+.landing-feature-problem-container {
+  width: 80%;
 
-.pricing-trial-description-text {
-  font-size: 1em;
-  text-align: left;
-}
-
-.pricing-question-answers-container {
-  display: flex;
-  flex-direction: column;
-  margin: 5%;
-  width: 50%;
-}
-
-.pricing-question-answers-header-text {
-  font-size: 1em;
-  font-weight: 600;
-  margin-top: 2%;
-  margin-bottom: 2%;
   text-align: center;
-}
-
-.pricing-question {
   font-size: 1em;
   font-weight: 600;
-  margin-top: 2%;
 }
 
-.pricing-answer {
-  font-size: 0.9em;
-}
-
-.landing-say-cheers-container {
+.landing-request-early-access-container {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
-  background-color: rgb(28, 35, 49);
+  flex-direction: column;
 }
 
-.landing-say-cheers-text {
-  font-family: Archer-Bold;
-  font-size: 5em;
-  color: #ffffff;
-  margin-top: 10%;
-  margin-bottom: 10%;
+.landing-request-early-access-header-text {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 600;
+  width: 80%;
 }
 
-.landing-add-to-slack-container {
-  margin-bottom: 10%;
+.landing-request-early-access-button-container {
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 @media all and (max-width: 1000px) {
@@ -145,13 +92,6 @@
   }
 
   .landing-header-text {
-    width: 90%;
     margin-bottom: 2%;
-  }
-
-  .landing-header-image {
-    width: 90%;
-
-    margin: 0;
   }
 }

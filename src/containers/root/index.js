@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // containers
 import LandingContainer from "../landing";
+import InstallContainer from "../install";
 import TermsOfServiceContainer from "../terms-of-service";
 import PrivacyPolicyContainer from "../privacy-policy";
 import AppInstalledContainer from "../app-installed";
@@ -20,6 +21,7 @@ const RootContainer = () => {
 
         <Switch>
           <Route exact path="/" component={LandingContainer} />
+          <Route exact path="/install" component={InstallContainer} />
           <Route exact path="/tos" component={TermsOfServiceContainer} />
           <Route exact path="/privacy" component={PrivacyPolicyContainer} />
           <Route

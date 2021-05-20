@@ -1,5 +1,5 @@
 import React from "react";
-import AddToSlackButton from "../AddToSlackButton";
+// import AddToSlackButton from "../AddToSlackButton";
 import "./styles.css";
 
 const NavBar = () => {
@@ -13,9 +13,9 @@ const NavBar = () => {
         Cheersly
       </div>
 
-      {!String(window.location.href).includes("/app-installed") && (
+      {/* {!String(window.location.href).includes("/app-installed") && (
         <AddToSlackButton type="dark" />
-      )}
+      )} */}
     </div>
   );
 };
