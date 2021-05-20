@@ -1,0 +1,33 @@
+.request-early-access-light-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 55px;
+  border-radius: 25px;
+  background-color: rgb(255, 227, 235);
+  cursor: pointer;
+  opacity: 1;
+}
+
+.request-early-access-light-button-text {
+  font-family: Archer-Bold;
+  font-size: 24px;
+}
+
+.request-early-access-dark-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 55px;
+  border-radius: 25px;
+  background-color: yellow;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.request-early-access-dark-button-text {
+  font-family: Archer-Bold;
+  font-size: 24px;
+}

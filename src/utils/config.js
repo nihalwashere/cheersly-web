@@ -28,4 +28,6 @@ export const FIREBASE_CONFIG = {
 
 export const SLACK_OAUTH_URL = `https://slack.com/oauth/v2/authorize?client_id=${SLACK_CLIENT_ID}&scope=app_mentions:read,chat:write,commands,im:history,team:read,users:read,incoming-webhook&user_scope=`;
 
+export const EARLY_ACCESS_TYPEFORM = "https://nihalk2.typeform.com/to/myS3uRuj";
+
 // export const API_BASE_URL = "http://localhost:7000/api/v1"; // local
