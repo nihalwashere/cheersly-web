@@ -1,0 +1,12 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 2%;
+}
+
+.navbar-text {
+  font-family: Archer-Bold;
+  font-size: 3em;
+  cursor: pointer;
+}

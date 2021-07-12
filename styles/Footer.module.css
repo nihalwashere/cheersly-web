@@ -1,0 +1,27 @@
+.footer-container {
+  display: flex;
+  background-color: rgb(28, 35, 49);
+  height: 100px;
+}
+
+.footer-items-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.footer-text {
+  font-family: Archer-Bold;
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media all and (max-width: 600px) {
+  .footer-items-container {
+    flex-direction: column;
+  }
+}

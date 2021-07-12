@@ -1,0 +1,21 @@
+.add-to-slack-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 300px;
+  height: 75px;
+
+  border-radius: 30px;
+
+  background-color: #ff8c00;
+
+  cursor: pointer;
+}
+
+.add-to-slack-button-text {
+  font-family: Archer-Bold;
+  font-size: 2em;
+
+  color: #ffffff;
+}
