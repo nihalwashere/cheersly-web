@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Head from "next/head";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import { parseQueryString } from "../utils/common";
@@ -17,6 +18,15 @@ export default function AppInstalled() {
 
   return (
     <div style={{ minHeight: "100vh", height: "100%" }}>
+      <Head>
+        <title>Cheersly · Build an awesome remote work culture in Slack!</title>
+        <meta
+          name="description"
+          content="Cheersly is a one stop shop to all your team's communication needs."
+        />
+        <link rel="icon" href="/images/Logo.png" />
+      </Head>
+
       <NavBar />
 
       <div className={styles["app-installed-text"]}>WELCOME TO THE CLUB!</div>
