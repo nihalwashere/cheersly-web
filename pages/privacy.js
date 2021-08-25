@@ -162,7 +162,23 @@ export default function PrivacyPolicy() {
             </div>
 
             <div className="questions-text margin-top-20">
-              3. Cookies and how we use them
+              3. Data Retention
+            </div>
+
+            <div className="answer-text">
+              <ul>
+                <li>
+                  We collect and store necessary information required to offer
+                  you the features of the platform. Data would be archived for
+                  30 days after you stopped using the platform. This is the
+                  period when we would want to win you back and resume your
+                  account from the last operating state.
+                </li>
+              </ul>
+            </div>
+
+            <div className="questions-text margin-top-20">
+              4. Cookies and how we use them
             </div>
             <div className="answer-text margin-top-10">
               Cookies are small files a site or its service provider transfers
@@ -178,7 +194,7 @@ export default function PrivacyPolicy() {
             </div>
 
             <div className="questions-text margin-top-20">
-              4. Who has access to your information
+              5. Who has access to your information
             </div>
 
             <div className="answer-text margin-top-10">
@@ -193,26 +209,11 @@ export default function PrivacyPolicy() {
               your personally identifiable information. This does not include
               trusted third parties who assist us in operating our website,
               conducting our business, or servicing you, so long as those
-              parties agree to keep this information confidential. An example is
-              our payment processor. They use your email address and name to
-              send you receipts for your payments.
+              parties agree to keep this information confidential.
             </div>
 
             <div className="answer-text margin-top-10">
               <ul>
-                <li>
-                  PayPal{" "}
-                  <a href="https://www.paypal.com">(https://www.paypal.com)</a>
-                </li>
-                <ul>
-                  <li>
-                    Billing and payment processor for purchases. (Administrator
-                    contact data only)
-                  </li>
-                </ul>
-
-                <br />
-
                 <li>
                   Heroku{" "}
                   <a href="https://www.heroku.com">(https://www.heroku.com)</a>
@@ -224,7 +225,7 @@ export default function PrivacyPolicy() {
             </div>
 
             <div className="questions-text margin-top-20">
-              5. How you can control your data
+              6. How you can control your data
             </div>
 
             <div className="answer-text margin-top-10">
@@ -234,7 +235,7 @@ export default function PrivacyPolicy() {
               within 30 days of notice.
             </div>
 
-            <div className="questions-text margin-top-20">6. Consent</div>
+            <div className="questions-text margin-top-20">7. Consent</div>
 
             <div className="answer-text margin-top-10">
               If you do not consent to the collection, use or disclosure of your
@@ -246,7 +247,7 @@ export default function PrivacyPolicy() {
             </div>
 
             <div className="questions-text margin-top-20">
-              7. Changes to this policy
+              8. Changes to this policy
             </div>
 
             <div className="answer-text margin-top-10">
