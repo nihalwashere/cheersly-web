@@ -6,16 +6,21 @@
   width: 300px;
   height: 75px;
 
-  border-radius: 30px;
+  border: 2px solid #ff8c00ff;
 
-  background-color: #ff8c00;
+  border-radius: 8px;
 
   cursor: pointer;
 }
 
-.add-to-slack-button-text {
-  font-family: Archer-Bold;
-  font-size: 2em;
+.add-to-button-text {
+  font-family: Product Sans;
+  font-size: 2rem;
 
-  color: #ffffff;
+  margin-left: 10px;
+}
+
+.add-to-slack-button-text {
+  margin-left: 8px;
+  font-family: Product Sans;
 }

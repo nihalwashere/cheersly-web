@@ -6,9 +6,9 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+html {
+  scroll-behavior: smooth;
+  background-color: #ef862c14;
 }
 
 * {
@@ -59,14 +59,13 @@ a {
   margin-bottom: 20px;
 }
 
-@font-face {
-  font-family: "Archer-Book";
-  src: local("Archer-Book"), local("Archer-Book"),
-    url("../public/fonts/Archer-Book-Pro.otf") format("opentype");
+.no-default-link {
+  color: inherit;
+  text-decoration: none;
 }
 
 @font-face {
-  font-family: "Archer-Bold";
-  src: local("Archer-Bold"), local("Archer-Bold"),
-    url("../public/fonts/Archer-Bold-Pro.otf") format("opentype");
+  font-family: "Product Sans";
+  src: local("Product Sans"), local("Product Sans"),
+    url("../public/fonts/Product\ Sans\ Regular.ttf") format("truetype");
 }

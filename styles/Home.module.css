@@ -16,17 +16,14 @@
 }
 
 .landing-hero-main-text {
-  font-family: Archer-Book;
-  font-weight: bold;
-  font-size: 40px;
+  font-family: Product Sans;
+  font-size: 2.5rem;
 }
 
 .landing-hero-sub-text {
-  font-family: Archer-Book;
+  font-family: Product Sans;
   color: #8e8e8e;
-  font-size: 24px;
-
-  margin-top: 3%;
+  font-size: 1.5rem;
 }
 
 .landing-hero-image-container {
@@ -49,21 +46,52 @@
 }
 
 .landing-feature-main-text {
-  font-family: Archer-Book;
-  font-weight: bold;
-  font-size: 30px;
+  font-family: Product Sans;
+  font-size: 2rem;
 }
 
 .landing-feature-sub-text {
-  font-family: Archer-Book;
+  font-family: Product Sans;
   color: #8e8e8e;
-  font-size: 20px;
-
-  margin-top: 3%;
+  font-size: 1.2rem;
 }
 
 .landing-feature-image {
   width: 60%;
+}
+
+.landing-why-use-container {
+  margin: 5%;
+}
+
+.landing-why-use-text-container {
+  display: flex;
+  justify-content: center;
+}
+
+.landing-why-use-text {
+  font-family: Product Sans;
+}
+
+.landing-why-use-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 3%;
+}
+
+.landing-why-use {
+  width: 40%;
+}
+
+.landing-why-use-header {
+  font-family: Product Sans;
+  color: var(--color-primary);
+}
+
+.landing-why-use-description {
+  font-family: Product Sans;
+  color: #8e8e8e;
 }
 
 .landing-add-to-slack-container {
@@ -84,10 +112,7 @@
 }
 
 .landing-install-header-text {
-  text-align: center;
-  font-size: 2em;
-  font-weight: 600;
-  width: 80%;
+  font-family: Product Sans;
 }
 
 .landing-install-button-container {
@@ -97,10 +122,22 @@
 @media all and (max-width: 1000px) {
   .landing-hero-container {
     flex-direction: column;
+    justify-content: center;
     text-align: center;
+  }
+
+  .landing-hero-text-container {
+    align-items: center;
+    width: 80%;
   }
 
   .landing-feature-container {
     flex-direction: column;
+  }
+
+  .landing-feature-text-container {
+    width: 80%;
+
+    text-align: center;
   }
 }
