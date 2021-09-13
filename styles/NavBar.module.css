@@ -1,12 +1,45 @@
 .navbar-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   margin: 2%;
 }
 
-.navbar-text {
-  font-family: Archer-Bold;
+.navbar-left-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar-right-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 40%;
+}
+
+.navbar-logo-text {
+  font-family: Product Sans;
   font-size: 3em;
   cursor: pointer;
+}
+
+.navbar-text {
+  font-family: Product Sans;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+@media all and (max-width: 1000px) {
+  .navbar-container {
+    flex-direction: column;
+  }
+
+  .navbar-right-container {
+    width: 80%;
+
+    margin-top: 3%;
+  }
 }

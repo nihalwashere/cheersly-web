@@ -1,9 +1,9 @@
-.app-installed-container {
+.contact-us-container {
   min-height: 100vh;
   height: 100%;
 }
 
-.app-installed-text {
+.contact-us-text {
   display: flex;
   justify-content: center;
   font-size: 2rem;
