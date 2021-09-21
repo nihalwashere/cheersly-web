@@ -16,7 +16,12 @@ export default function AddToSlackButton() {
       onClick={handleAddToSlackClick}
     >
       {/* eslint-disable-next-line */}
-      <img src="/images/slack_logo.svg" alt="" width="30px" height="30px" />
+      <img
+        src="/images/slack_logo.svg"
+        alt="Slack"
+        width="30px"
+        height="30px"
+      />
       <span className={styles["add-to-button-text"]}>Add to</span>
       <h1 className={styles["add-to-slack-button-text"]}>slack</h1>
     </div>

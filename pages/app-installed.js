@@ -4,6 +4,7 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import { parseQueryString } from "../utils/common";
 import { slackInstall } from "../utils/api";
+import { WEB_BASE_URL } from "../utils/config";
 import { META_TITLE, META_DESCRIPTION } from "../utils/constants";
 import styles from "../styles/AppInstalled.module.css";
 
@@ -26,6 +27,8 @@ export default function AppInstalled() {
         <meta property="og:title" content={META_TITLE} />
         <meta property="og:image" content="/images/og_image.svg" />
         <meta property="og:description" content={META_DESCRIPTION} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`${WEB_BASE_URL}/app-installed`} />
       </Head>
 
       <NavBar />

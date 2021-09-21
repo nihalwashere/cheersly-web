@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import { WEB_BASE_URL } from "../utils/config";
 import {
   META_TITLE,
   META_DESCRIPTION,
@@ -18,13 +19,15 @@ export default function PrivacyPolicy() {
         <meta property="og:title" content={META_TITLE} />
         <meta property="og:image" content="/images/og_image.svg" />
         <meta property="og:description" content={META_DESCRIPTION} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`${WEB_BASE_URL}/privacy`} />
       </Head>
 
       <NavBar />
 
       <div className="gutter-root">
         <div className="gutter">
-          <p className="page-header">Privacy Policy</p>
+          <h1 className="page-header">Privacy Policy</h1>
 
           <p className="answer-text">
             Our approach to your privacy boils down to doing the right thing.

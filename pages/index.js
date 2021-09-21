@@ -3,6 +3,7 @@ import Head from "next/head";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import AddToSlackButton from "../components/AddToSlackButton";
+import { WEB_BASE_URL } from "../utils/config";
 import { META_TITLE, META_DESCRIPTION } from "../utils/constants";
 import styles from "../styles/Home.module.css";
 
@@ -16,6 +17,8 @@ export default function Home() {
         <meta property="og:title" content={META_TITLE} />
         <meta property="og:image" content="/images/og_image.svg" />
         <meta property="og:description" content={META_DESCRIPTION} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`${WEB_BASE_URL}`} />
       </Head>
 
       <NavBar />
@@ -43,7 +46,7 @@ export default function Home() {
             {/* eslint-disable-next-line */}
             <img
               src="/images/Illustration_1.png"
-              alt=""
+              alt="Whom do you want to say cheers to?"
               width="100%"
               height="100%"
             />
@@ -55,16 +58,16 @@ export default function Home() {
             {/* eslint-disable-next-line */}
             <img
               src="/images/Illustration_3.png"
-              alt=""
+              alt="Get a sneak peak of your team's mood in the home tab of Cheersly"
               width="100%"
               height="100%"
             />
           </figure>
 
           <section className={styles["landing-feature-text-container"]}>
-            <h1 className={styles["landing-feature-main-text"]}>
+            <h2 className={styles["landing-feature-main-text"]}>
               Boost your team&apos;s morale
-            </h1>
+            </h2>
             <p className={styles["landing-feature-sub-text"]}>
               Cheersly allows users to quickly post &quot;cheers&quot; to a team
               member in acknowledgement of performance. Peer team members give
@@ -77,9 +80,9 @@ export default function Home() {
 
         <div className={styles["landing-feature-container"]}>
           <section className={styles["landing-feature-text-container"]}>
-            <h1 className={styles["landing-feature-main-text"]}>
+            <h2 className={styles["landing-feature-main-text"]}>
               Conduct polls
-            </h1>
+            </h2>
             <p className={styles["landing-feature-sub-text"]}>
               Ask questions and receive insights that help you make a decision.
             </p>
@@ -89,7 +92,7 @@ export default function Home() {
             {/* eslint-disable-next-line */}
             <img
               src="/images/Illustration_6.png"
-              alt=""
+              alt="Ask a question to your peers and get a poll (anonymous/non-anonymous)"
               width="100%"
               height="100%"
             />
@@ -101,16 +104,16 @@ export default function Home() {
             {/* eslint-disable-next-line */}
             <img
               src="/images/Illustration_2.png"
-              alt=""
+              alt="Share feedback with your team (anonymous/non-anonymous)"
               width="100%"
               height="100%"
             />
           </figure>
 
           <section className={styles["landing-feature-text-container"]}>
-            <h1 className={styles["landing-feature-main-text"]}>
+            <h2 className={styles["landing-feature-main-text"]}>
               Share feedback
-            </h1>
+            </h2>
             <p className={styles["landing-feature-sub-text"]}>
               Encourage open and honest feedback, empower your team by valuing
               their input. Anonymity provides employees the freedom to express
@@ -122,9 +125,9 @@ export default function Home() {
 
         <div className={styles["landing-feature-container"]}>
           <section className={styles["landing-feature-text-container"]}>
-            <h1 className={styles["landing-feature-main-text"]}>
+            <h2 className={styles["landing-feature-main-text"]}>
               Company values
-            </h1>
+            </h2>
             <p className={styles["landing-feature-sub-text"]}>
               Support your company&apos;s vision and shape its culture by
               defining company values.
@@ -135,7 +138,7 @@ export default function Home() {
             {/* eslint-disable-next-line */}
             <img
               src="/images/Illustration_4.png"
-              alt=""
+              alt="Appreciate your team members and tag company values"
               width="100%"
               height="100%"
             />
@@ -147,14 +150,14 @@ export default function Home() {
             {/* eslint-disable-next-line */}
             <img
               src="/images/Illustration_5.png"
-              alt=""
+              alt="Reward your team"
               width="100%"
               height="100%"
             />
           </figure>
 
           <section className={styles["landing-feature-text-container"]}>
-            <h1 className={styles["landing-feature-main-text"]}>Rewards 💰</h1>
+            <h2 className={styles["landing-feature-main-text"]}>Rewards 💰</h2>
             <p className={styles["landing-feature-sub-text"]}>
               Create real-life perks and reward your team.
             </p>
@@ -163,9 +166,9 @@ export default function Home() {
 
         <div id="use-cases" className={styles["landing-why-use-container"]}>
           <section className={styles["landing-why-use-text-container"]}>
-            <h1 className={styles["landing-why-use-text"]}>
+            <h2 className={styles["landing-why-use-text"]}>
               Why use Cheersly?
-            </h1>
+            </h2>
           </section>
 
           <div className={styles["landing-why-use-row"]}>
@@ -237,9 +240,9 @@ export default function Home() {
         </div>
 
         <div className={styles["landing-install-container"]}>
-          <h1 className={styles["landing-install-header-text"]}>
+          <h2 className={styles["landing-install-header-text"]}>
             Build an awesome remote work culture!
-          </h1>
+          </h2>
 
           <div className={styles["landing-install-button-container"]}>
             <AddToSlackButton type="dark" />
