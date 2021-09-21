@@ -36,6 +36,12 @@ export default function NavBar() {
         </span>
 
         <span className={styles["navbar-text"]}>
+          <a href={`${WEB_BASE_URL}/pricing`} className="no-default-link">
+            Pricing
+          </a>
+        </span>
+
+        <span className={styles["navbar-text"]}>
           <a href={`${WEB_BASE_URL}/faq`} className="no-default-link">
             FAQ
           </a>

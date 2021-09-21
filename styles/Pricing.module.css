@@ -1,0 +1,125 @@
+.pricing-container {
+  margin: 5%;
+}
+
+.pricing-header-container {
+  text-align: center;
+}
+
+.pricing-header-text {
+  font-family: Product Sans;
+  font-size: 2rem;
+}
+
+.pricing-header-sub-text {
+  font-family: Product Sans;
+  color: #8e8e8e;
+  font-size: 1.2rem;
+}
+
+.pricing-slider-box-root-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pricing-slider-box-container {
+  width: 70%;
+
+  margin-top: 3%;
+}
+
+.pricing-slider-box-result-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pricing-slider-box-result-left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.pricing-slider-box-result-right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.pricing-slider-box-result-header {
+  font-family: Product Sans;
+  color: #8e8e8e;
+  font-size: 1.2rem;
+}
+
+.pricing-slider-box-result {
+  font-family: Product Sans;
+  font-size: 1.8rem;
+
+  margin-top: 10px;
+}
+
+.pricing-slider-container {
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+.pricing-slider-box-footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing-slider-box-footer-header {
+  font-family: Product Sans;
+  color: #8e8e8e;
+  font-size: 1.2rem;
+
+  margin-bottom: 5%;
+}
+
+.pricing-faq-root-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pricing-faq-container {
+  width: 70%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.pricing-faq-container {
+  text-align: center;
+}
+
+.pricing-faq-header-text {
+  font-family: Product Sans;
+  font-size: 1.5rem;
+}
+
+.pricing-faq-question-answer-container {
+  margin-top: 3%;
+}
+
+.pricing-faq-question-answer {
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+
+  margin-top: 2%;
+}
+
+.pricing-faq-question {
+  font-family: Product Sans;
+  font-size: 1.2rem;
+}
+
+.pricing-faq-answer {
+  font-family: Product Sans;
+  color: #8e8e8e;
+  font-size: 1rem;
+
+  margin-top: 10px;
+}
