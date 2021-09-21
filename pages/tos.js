@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import { WEB_BASE_URL } from "../utils/config";
 import { META_TITLE, META_DESCRIPTION } from "../utils/constants";
 
 export default function TermsOfService() {
@@ -14,13 +15,15 @@ export default function TermsOfService() {
         <meta property="og:title" content={META_TITLE} />
         <meta property="og:image" content="/images/og_image.svg" />
         <meta property="og:description" content={META_DESCRIPTION} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`${WEB_BASE_URL}/tos`} />
       </Head>
 
       <NavBar />
 
       <div className="gutter-root">
         <div className="gutter">
-          <p className="page-header">Terms of Service</p>
+          <h1 className="page-header">Terms of Service</h1>
 
           <p className="answer-text">
             These terms of service govern your use of our website and the

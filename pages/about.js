@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import { WEB_BASE_URL } from "../utils/config";
 import { META_TITLE, META_DESCRIPTION } from "../utils/constants";
 import styles from "../styles/About.module.css";
 
@@ -15,6 +16,8 @@ export default function About() {
         <meta property="og:title" content={META_TITLE} />
         <meta property="og:image" content="/images/og_image.svg" />
         <meta property="og:description" content={META_DESCRIPTION} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`${WEB_BASE_URL}/about`} />
       </Head>
 
       <NavBar />
@@ -23,12 +26,12 @@ export default function About() {
         <div className={styles["about-container"]}>
           <h1 className={styles["about-header"]}>About</h1>
 
-          <h1 className={styles["about-sub-header"]}>
+          <h2 className={styles["about-sub-header"]}>
             Do you feel like you are working in isolation?
             <br />
             <br />
             Do you feel that you are unappreciated?
-          </h1>
+          </h2>
 
           <p className={styles["about-note"]}>
             We wanted to make appreciation a little fun. While the pandemic has

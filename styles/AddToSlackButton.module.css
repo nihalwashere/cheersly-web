@@ -13,6 +13,10 @@
   cursor: pointer;
 }
 
+.add-to-slack-button-container:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
 .add-to-button-text {
   font-family: Product Sans;
   font-size: 2rem;
