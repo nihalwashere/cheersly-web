@@ -16,7 +16,7 @@ const Footer = () => {
         <div className={styles["footer-column"]}>
           <span className={styles["footer-column-header"]}>COMPANY</span>
           <span className={styles["footer-column-content"]}>
-            <ul style={{ "list-style-type": "none", padding: 0 }}>
+            <ul style={{ listStyleType: "none", padding: 0 }}>
               <li>
                 {/* eslint-disable-next-line */}
                 <a href={`${WEB_BASE_URL}/privacy`} className="no-default-link">

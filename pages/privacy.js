@@ -219,10 +219,30 @@ export default function PrivacyPolicy() {
               <ul>
                 <li>
                   Heroku{" "}
-                  <a href="https://www.heroku.com">(https://www.heroku.com)</a>
+                  <a
+                    href="https://www.heroku.com"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    (https://www.heroku.com)
+                  </a>
                 </li>
                 <ul>
                   <li>Hosting provider for app.</li>
+                </ul>
+
+                <li>
+                  Stripe{" "}
+                  <a
+                    href="https://www.stripe.com"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    (https://www.stripe.com)
+                  </a>
+                </li>
+                <ul>
+                  <li>Payments processing infrastructure for app.</li>
                 </ul>
               </ul>
             </p>
