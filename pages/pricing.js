@@ -156,7 +156,7 @@ export default function Pricing() {
 
             <div className={styles["pricing-slider-box-footer-container"]}>
               <span className={styles["pricing-slider-box-footer-header"]}>
-                Free 30-day trial · No credit card required
+                Free 14-day trial · No credit card required
               </span>
 
               <StartFreeTrialButton />
