@@ -30,16 +30,17 @@
 
 .footer-copyright-container {
   display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
   font-family: Product Sans;
-  font-size: 18px;
-  color: #ffffff;
-  margin-left: 5%;
-  margin-top: 3%;
+  font-size: 16px;
+  color: #8e8e8e;
 }
 
 .footer-company-copyright {
   display: flex;
   align-items: center;
 
-  margin-bottom: 2%;
+  margin-bottom: 1%;
 }

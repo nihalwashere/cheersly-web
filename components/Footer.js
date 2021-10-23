@@ -81,9 +81,21 @@ const Footer = () => {
       </div>
 
       <div className={styles["footer-copyright-container"]}>
+        <p>
+          Made by{" "}
+          <span style={{ fontWeight: "bold", color: "" }}>
+            <a
+              href="https://thelonewolf.tech"
+              className="no-default-link"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              LoneWolf Technologies.
+            </a>
+          </span>
+        </p>
         <span className={styles["footer-company-copyright"]}>
-          Cheersly
-          {/* - {new Date().getFullYear()} */}
+          Copyright © {new Date().getFullYear()} Cheersly. All rights reserved.
         </span>
       </div>
     </div>
