@@ -8,84 +8,7 @@ import { WEB_BASE_URL } from "../utils/config";
 import { META_TITLE, META_DESCRIPTION } from "../utils/constants";
 import styles from "../styles/Pricing.module.css";
 
-const marks = [
-  {
-    value: 50,
-    label: "50",
-  },
-  {
-    value: 250,
-    label: "250",
-  },
-  {
-    value: 500,
-    label: "500",
-  },
-  {
-    value: 750,
-    label: "750",
-  },
-  {
-    value: 1000,
-    label: "1000",
-  },
-  {
-    value: 1250,
-    label: "1250",
-  },
-  {
-    value: 1500,
-    label: "1500",
-  },
-  {
-    value: 1750,
-    label: "1750",
-  },
-  {
-    value: 2000,
-    label: "2000",
-  },
-  {
-    value: 2250,
-    label: "2000+",
-  },
-];
-
 export default function Pricing() {
-  const [price, setPrice] = useState(19);
-
-  const [teamSize, setTeamSize] = useState(50);
-
-  const [shouldShowContactUs, setShouldShowContactUs] = useState(false);
-
-  const handleTeamSizeChange = (event) => {
-    setTeamSize(event.target.value);
-
-    setShouldShowContactUs(false);
-
-    if (event.target.value === 50) {
-      setPrice(19);
-    } else if (event.target.value === 250) {
-      setPrice(49);
-    } else if (event.target.value === 500) {
-      setPrice(99);
-    } else if (event.target.value === 750) {
-      setPrice(149);
-    } else if (event.target.value === 1000) {
-      setPrice(199);
-    } else if (event.target.value === 1250) {
-      setPrice(249);
-    } else if (event.target.value === 1500) {
-      setPrice(299);
-    } else if (event.target.value === 1750) {
-      setPrice(349);
-    } else if (event.target.value === 2000) {
-      setPrice(399);
-    } else {
-      setShouldShowContactUs(true);
-    }
-  };
-
   return (
     <div>
       <Head>
@@ -112,50 +35,14 @@ export default function Pricing() {
           </span>
         </div>
 
-        <div className={styles["pricing-slider-box-root-container"]}>
-          <div className={styles["pricing-slider-box-container"]}>
-            <div className={styles["pricing-slider-box-result-container"]}>
-              <div
-                className={styles["pricing-slider-box-result-left-container"]}
-              >
-                <span className={styles["pricing-slider-box-result-header"]}>
-                  Users
-                </span>
-                <span className={styles["pricing-slider-box-result"]}>
-                  {shouldShowContactUs ? "2000+" : `Upto ${teamSize}`}
-                </span>
-              </div>
+        <div className={styles["pricing-box-root-container"]}>
+          <div>
+            <p className={styles["pricing-header-text"]}>
+              $3 per person per month
+            </p>
 
-              <div
-                className={styles["pricing-slider-box-result-right-container"]}
-              >
-                <span className={styles["pricing-slider-box-result-header"]}>
-                  Pricing
-                </span>
-                <span className={styles["pricing-slider-box-result"]}>
-                  {shouldShowContactUs ? "Contact us" : `$${price} / mo`}
-                </span>
-              </div>
-            </div>
-
-            <div className={styles["pricing-slider-container"]}>
-              <Slider
-                size="small"
-                aria-label="Pricing"
-                defaultValue={50}
-                valueLabelDisplay="off"
-                step={null}
-                marks={marks}
-                min={50}
-                max={2250}
-                onChange={handleTeamSizeChange}
-                value={teamSize}
-                style={{ color: "#ff8c00ff" }}
-              />
-            </div>
-
-            <div className={styles["pricing-slider-box-footer-container"]}>
-              <span className={styles["pricing-slider-box-footer-header"]}>
+            <div className={styles["pricing-box-footer-container"]}>
+              <span className={styles["pricing-box-footer-header"]}>
                 Free 14-day trial · No credit card required
               </span>
 
@@ -184,6 +71,19 @@ export default function Pricing() {
                   upgrade. If you don&apos;t upgrade and your trial expires,
                   people will receive a response from Cheersly letting them know
                   the trial is over.
+                </span>
+              </div>
+
+              <div className={styles["pricing-faq-question-answer"]}>
+                <span className={styles["pricing-faq-question"]}>
+                  How do you calculate the number of people on my team I have to
+                  pay for? Do I have to pay for everyone on my Slack team?
+                </span>
+                <span className={styles["pricing-faq-answer"]}>
+                  Whenever someone gives or receives their first cheers,
+                  participates in a poll or shares feedback we add them to your
+                  account. So you don&apos;t pay for anyone on your team who
+                  hasn&apos;t used Cheersly.
                 </span>
               </div>
 
