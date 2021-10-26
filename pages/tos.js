@@ -70,7 +70,7 @@ export default function TermsOfService() {
           <p className="questions-text">Refund policy</p>
 
           <p className="answer-text">
-            We have a 30 day money back guarantee if you are not satisfied with
+            We have a 15 day money back guarantee if you are not satisfied with
             our services.
           </p>
 
