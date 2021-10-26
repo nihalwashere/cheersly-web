@@ -23,7 +23,7 @@ export default function AddToSlackButton() {
         height="30px"
       />
       <span className={styles["add-to-button-text"]}>Add to</span>
-      <h1 className={styles["add-to-slack-button-text"]}>slack</h1>
+      <h1 className={styles["add-to-slack-button-text"]}>Slack</h1>
     </div>
   );
 }
