@@ -35,11 +35,11 @@ export default function NavBar() {
           </a>
         </span>
 
-        <span className={styles["navbar-text"]}>
+        {/* <span className={styles["navbar-text"]}>
           <a href={`${WEB_BASE_URL}/pricing`} className="no-default-link">
             Pricing
           </a>
-        </span>
+        </span> */}
 
         <span className={styles["navbar-text"]}>
           <a href={`${WEB_BASE_URL}/faq`} className="no-default-link">
