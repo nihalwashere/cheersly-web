@@ -15,7 +15,7 @@ export default function About() {
           Do you feel that you are unappreciated?
         </h2>
 
-        <p className="mt-4">
+        <p className="text-gray-600 mt-4">
           We wanted to make appreciation a little fun. While the pandemic has
           been a little demanding and all of us pushed to remote work. We
           believe for most of the teams this is going to continue where remote
@@ -24,7 +24,7 @@ export default function About() {
           app that helps to share in some cheers with your peers and spread joy!
         </p>
 
-        <p className="mt-4">
+        <p className="text-gray-600 mt-4">
           You should share in some cheers with your peers because it makes the
           recipient feel good about themselves and this can help to boost their
           performance. Cheersly provides the kind of positive experience or
@@ -32,14 +32,14 @@ export default function About() {
           renew their commitment to their organization.
         </p>
 
-        <p className="mt-4">
+        <p className="text-gray-600 mt-4">
           By implementing gratitude into company culture, employees are more
           willing to spread their positive feelings with others, whether it’s
           helping out with a project or taking time to notice and recognizing
           those that have gone the extra mile.
         </p>
 
-        <p className="mt-4">
+        <p className="text-gray-600 mt-4">
           Showing gratitude can increase a person’s wellness, increase better
           sleep habits, increase metabolism and lessen stress. This directly
           impacts work results and employee interaction. With employee
@@ -47,7 +47,7 @@ export default function About() {
           the employee’s well-being and health.
         </p>
 
-        <p className="mt-4">
+        <p className="text-gray-600 mt-4">
           The greatest psychological effect of appreciation and gratitude is the
           happiness and other emotions immediately felt whether we’re giving or
           benefiting from. Gratitude creates good feelings, cheerful memories,
@@ -60,12 +60,12 @@ export default function About() {
           again, create unity.
         </p>
 
-        <p className="mt-4">
+        <p className="text-gray-600 mt-4">
           According to a case study, most millennials quit because they feel no
           one said thank you, they feel unappreciated.
         </p>
 
-        <p className="mt-4 mb-10">
+        <p className="text-gray-600 mt-4 mb-10">
           Let&apos;s make it a little easier for great millennial staff to stick
           around.
         </p>
