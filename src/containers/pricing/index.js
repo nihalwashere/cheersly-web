@@ -1,8 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { CHEERSLY_SUPPORT_EMAIL } from "../../utils/constants";
 import StartFreeTrialButton from "../../components/StartFreeTrialButton";
+import InstallationChecklistDialog from "../../components/InstallationChecklistDialog";
 
 export default function Pricing() {
+  const [
+    shouldShowInstallationChecklistDialog,
+    setShouldShowInstallationChecklistDialog,
+  ] = useState(false);
+
+  const handleAddToSlack = () => {
+    setShouldShowInstallationChecklistDialog(true);
+  };
+
+  const handleCloseInstallationChecklistDialog = () => {
+    setShouldShowInstallationChecklistDialog(false);
+  };
+
+  const handleInstall = () => {
+    window.location.href = process.env.REACT_APP_SLACK_OAUTH_URL;
+    handleCloseInstallationChecklistDialog();
+  };
+
   return (
     <div className="flex flex-col items-center">
       <div className="flex justify-center text-4xl font-semibold mb-4">
@@ -90,7 +109,7 @@ export default function Pricing() {
         </div>
       </div>
 
-      <StartFreeTrialButton />
+      <StartFreeTrialButton onClick={handleAddToSlack} />
 
       <div className="mt-12 mb-12 flex flex-col items-center w-1/2">
         <div className="text-2xl font-semibold">Pricing Questions</div>
@@ -134,6 +153,14 @@ export default function Pricing() {
           </div>
         </div>
       </div>
+
+      {shouldShowInstallationChecklistDialog && (
+        <InstallationChecklistDialog
+          open={shouldShowInstallationChecklistDialog}
+          onClose={handleCloseInstallationChecklistDialog}
+          onInstall={handleInstall}
+        />
+      )}
     </div>
   );
 }

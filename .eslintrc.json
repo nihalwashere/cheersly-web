@@ -28,6 +28,7 @@
     "no-console": "off",
     "global-require": "warn",
     "no-return-await": "off",
+    "no-restricted-globals": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/jsx-one-expression-per-line": "off",
     "react/button-has-type": "off",

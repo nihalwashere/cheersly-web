@@ -1,10 +1,9 @@
 import React from "react";
+import PropTypes from "prop-types";
 import ImageAssets from "../../assets/images";
 
-export default function AddToSlackButton() {
-  const handleAddToSlackClick = () => {
-    window.location.href = process.env.REACT_APP_SLACK_OAUTH_URL;
-  };
+export default function AddToSlackButton(props) {
+  const { onClick } = props;
 
   return (
     <div
@@ -15,7 +14,7 @@ export default function AddToSlackButton() {
         width: 300,
         height: 75,
       }}
-      onClick={handleAddToSlackClick}
+      onClick={onClick}
     >
       <img
         src={ImageAssets.Slack_Logo}
@@ -28,3 +27,7 @@ export default function AddToSlackButton() {
     </div>
   );
 }
+
+AddToSlackButton.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};

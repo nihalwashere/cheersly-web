@@ -1,14 +1,13 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-export default function StartFreeTrialButton() {
-  const handleStartFreeTrialClick = () => {
-    window.location.href = process.env.REACT_APP_SLACK_OAUTH_URL;
-  };
+export default function StartFreeTrialButton(props) {
+  const { onClick } = props;
 
   return (
     <div
       className="flex justify-center items-center cursor-pointer hover-slack-button"
-      onClick={handleStartFreeTrialClick}
+      onClick={onClick}
       style={{
         border: "2px solid #FFD700",
         background: "#FFD700",
@@ -21,3 +20,7 @@ export default function StartFreeTrialButton() {
     </div>
   );
 }
+
+StartFreeTrialButton.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};

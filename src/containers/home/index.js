@@ -1,8 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import AddToSlackButton from "../../components/AddToSlackButton";
+import InstallationChecklistDialog from "../../components/InstallationChecklistDialog";
 import ImageAssets from "../../assets/images";
 
 export default function Home() {
+  const [
+    shouldShowInstallationChecklistDialog,
+    setShouldShowInstallationChecklistDialog,
+  ] = useState(false);
+
+  const handleAddToSlack = () => {
+    setShouldShowInstallationChecklistDialog(true);
+  };
+
+  const handleCloseInstallationChecklistDialog = () => {
+    setShouldShowInstallationChecklistDialog(false);
+  };
+
+  const handleInstall = () => {
+    window.location.href = process.env.REACT_APP_SLACK_OAUTH_URL;
+    handleCloseInstallationChecklistDialog();
+  };
+
   return (
     <div>
       <div className="m-8">
@@ -20,7 +39,7 @@ export default function Home() {
             </header>
 
             <div className="mt-8">
-              <AddToSlackButton type="dark" />
+              <AddToSlackButton type="dark" onClick={handleAddToSlack} />
             </div>
           </div>
 
@@ -217,10 +236,18 @@ export default function Home() {
           </h2>
 
           <div className="mt-10">
-            <AddToSlackButton type="dark" />
+            <AddToSlackButton type="dark" onClick={handleAddToSlack} />
           </div>
         </div>
       </div>
+
+      {shouldShowInstallationChecklistDialog && (
+        <InstallationChecklistDialog
+          open={shouldShowInstallationChecklistDialog}
+          onClose={handleCloseInstallationChecklistDialog}
+          onInstall={handleInstall}
+        />
+      )}
     </div>
   );
 }
