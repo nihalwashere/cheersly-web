@@ -37,12 +37,6 @@ export default function Pricing() {
         <div className="flex flex-col items-center justify-center w-64 h-64 bg-yellow-300 rounded border-2 border-current">
           <div className="text-2xl font-semibold pt-4 pb-4">Free</div>
 
-          <div className="text-base">Polls (25 responses / month)</div>
-
-          <div className="text-base">Feedback (5 / month)</div>
-
-          <div className="text-base">Cheers (5 / month)</div>
-
           <div className="text-base">This or That</div>
 
           <div className="text-base">Icebreaker Questions</div>
@@ -57,35 +51,27 @@ export default function Pricing() {
         <div className="flex flex-col items-center justify-center w-64 h-64 bg-yellow-300 rounded border-2 border-current">
           <div className="text-2xl font-semibold pt-2 pb-2">Standard</div>
 
-          <div className="text-4xl font-semibold pt-2 pb-2">$29 / month</div>
+          <div className="text-4xl font-semibold pt-2 pb-2">$99 / month</div>
 
-          <div className="text-base">Rewards & Recognition</div>
-
-          <div className="text-base">Everything in free + unlimited,</div>
+          <div className="text-base">Everything in free plan,</div>
 
           <div className="text-base">Polls</div>
 
           <div className="text-base">Feedback</div>
 
-          <div className="text-base">Cheers</div>
+          <div className="text-base">Peer Recognition</div>
 
-          <div className="text-base font-semibold">for upto 250 users</div>
+          <div className="text-base">Rewards</div>
+
+          <div className="text-base font-semibold">for upto 200 users</div>
         </div>
 
         <div className="flex flex-col items-center justify-center w-64 h-64 bg-yellow-300 rounded border-2 border-current">
           <div className="text-2xl font-semibold pt-2 pb-2">Premium</div>
 
-          <div className="text-4xl font-semibold pt-2 pb-2">$49 / month</div>
+          <div className="text-4xl font-semibold pt-2 pb-2">$199 / month</div>
 
-          <div className="text-base">Rewards & Recognition</div>
-
-          <div className="text-base">Everything in free + unlimited,</div>
-
-          <div className="text-base">Polls</div>
-
-          <div className="text-base">Feedback</div>
-
-          <div className="text-base">Cheers</div>
+          <div className="text-base">Everything in standard plan,</div>
 
           <div className="text-base font-semibold">for upto 500 users</div>
         </div>
@@ -93,19 +79,18 @@ export default function Pricing() {
         <div className="flex flex-col items-center justify-center w-64 h-64 bg-yellow-300 rounded border-2 border-current">
           <div className="text-2xl font-semibold pt-2 pb-2">Enterprise</div>
 
-          <div className="text-4xl font-semibold pt-2 pb-2">$79 / month</div>
+          <div className="font-semibold pt-2 pb-2">
+            <a
+              href={`mailto:${CHEERSLY_SUPPORT_EMAIL}?subject=Privacy Policy`}
+              className="underline"
+            >
+              Contact {CHEERSLY_SUPPORT_EMAIL}
+            </a>
+          </div>
 
-          <div className="text-base">Rewards & Recognition</div>
+          <div className="text-base">Everything in premium plan,</div>
 
-          <div className="text-base">Everything in free + unlimited,</div>
-
-          <div className="text-base">Polls</div>
-
-          <div className="text-base">Feedback</div>
-
-          <div className="text-base">Cheers</div>
-
-          <div className="text-base font-semibold">for upto 1000 users</div>
+          <div className="text-base font-semibold">more than 500 users</div>
         </div>
       </div>
 
