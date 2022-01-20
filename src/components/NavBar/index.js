@@ -30,11 +30,11 @@ export default function NavBar() {
           </a>
         </span>
 
-        <span className="text-2xl font-medium cursor-pointer">
+        {/* <span className="text-2xl font-medium cursor-pointer">
           <a href="/pricing" className="no-default-link">
             Pricing
           </a>
-        </span>
+        </span> */}
 
         <span className="text-2xl font-medium cursor-pointer">
           <a href="/faq" className="no-default-link">

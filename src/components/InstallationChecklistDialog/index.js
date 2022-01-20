@@ -9,9 +9,15 @@ import { CustomDialog, CustomDialogTitle } from "../CustomDialog";
 export default function InstallationChecklistDialog(props) {
   const { open, onClose, onInstall } = props;
 
+  const [consentEmailChecked, setConsentEmailChecked] = useState(false);
+
   const [checked, setChecked] = useState(false);
 
-  const handleCheck = () => {
+  const handleCheckConsentContactEmail = (event) => {
+    setConsentEmailChecked(event.target.checked);
+  };
+
+  const handleCheck = (event) => {
     setChecked(event.target.checked);
   };
 
@@ -31,11 +37,18 @@ export default function InstallationChecklistDialog(props) {
         <span className="font-bold">Add Cheersly to Slack</span>
       </CustomDialogTitle>
       <DialogContent dividers>
-        <div className="flex items-start">
+        <div className="flex items-center">
+          <Checkbox
+            checked={consentEmailChecked}
+            onChange={handleCheckConsentContactEmail}
+          />
+          <span>I would like to recieve marketing emails</span>
+        </div>
+
+        <div className="flex items-center">
           <Checkbox checked={checked} onChange={handleCheck} />
-          <span className="">
-            By adding Cheersly to your Slack workspace, you consent to be
-            contacted over email, agree to our{" "}
+          <span>
+            I agree to the{" "}
             <a href="/tos" className="underline">
               Terms of Service
             </a>{" "}
@@ -43,14 +56,13 @@ export default function InstallationChecklistDialog(props) {
             <a href="/privacy" className="underline">
               Privacy Policy
             </a>
-            .
           </span>
         </div>
       </DialogContent>
       <DialogActions>
         <Button
           variant="outlined"
-          onClick={onInstall}
+          onClick={() => onInstall(consentEmailChecked)}
           style={{
             border: "2px solid #ff8c00ff",
             borderRadius: 8,

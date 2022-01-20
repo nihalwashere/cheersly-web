@@ -70,7 +70,7 @@ export default function Footer() {
       </div>
 
       <div className="flex flex-col items-center text-center text-base mt-4 text-gray-400">
-        <p>
+        {/* <p>
           Made by{" "}
           <span className="font-bold">
             <a
@@ -82,7 +82,7 @@ export default function Footer() {
               LoneWolf Technologies, LLC.
             </a>
           </span>
-        </p>
+        </p> */}
         <span className="mt-1 mb-1">
           Copyright © {new Date().getFullYear()} Cheersly. All rights reserved.
         </span>

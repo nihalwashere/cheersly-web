@@ -17,8 +17,13 @@ export default function Pricing() {
     setShouldShowInstallationChecklistDialog(false);
   };
 
-  const handleInstall = () => {
-    window.location.href = process.env.REACT_APP_SLACK_OAUTH_URL;
+  const handleInstall = (isMarketingEmailConsentChecked) => {
+    if (isMarketingEmailConsentChecked) {
+      window.location.href = process.env.REACT_APP_SLACK_OAUTH_EMAIL_SCOPE_URL;
+    } else {
+      window.location.href = process.env.REACT_APP_SLACK_OAUTH_URL;
+    }
+
     handleCloseInstallationChecklistDialog();
   };
 

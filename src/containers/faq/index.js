@@ -98,8 +98,8 @@ export default function FAQ() {
             <p className="mt-2 ml-7">
               Cheersly only reads and saves content that is explicitly and
               directly sent to the app, nothing else. You&apos;ll notice we
-              don&apos;t ask for permission to read your Slack messages or email
-              addresses of your users, we don&apos;t need it.
+              don&apos;t ask for permission to read your Slack messages, we
+              don&apos;t need it.
               <br />
               <br />
               The permissions requested for the app have been reviewed and
