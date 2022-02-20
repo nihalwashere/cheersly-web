@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PageNotFound from "../../components/PageNotFound";
 // containers
 import Home from "../home";
-// import Pricing from "../pricing";
+import Pricing from "../pricing";
 import FAQ from "../faq";
 import About from "../about";
 import TermsOfService from "../tos";
@@ -17,7 +17,7 @@ const RoutesContainer = () => {
       <Routes>
         <Route exact path="/" element={<Home />} />
 
-        {/* <Route exact path="/pricing" element={<Pricing />} /> */}
+        <Route exact path="/pricing" element={<Pricing />} />
 
         <Route exact path="/faq" element={<FAQ />} />
 
