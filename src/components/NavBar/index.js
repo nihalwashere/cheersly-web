@@ -1,12 +1,20 @@
 import React from "react";
+import ImageAssets from "../../assets/images";
 
 export default function NavBar() {
   return (
     <nav className="flex justify-between items-center m-10">
       <div className="flex justify-start items-center">
-        <header className="text-5xl font-semibold cursor-pointer">
+        <header className="cursor-pointer">
           <a href="/" className="no-default-link">
-            cheersly
+            <div className="w-60">
+              <img
+                src={ImageAssets.Nav_Logo}
+                alt="cheersly"
+                width="100%"
+                height="100%"
+              />
+            </div>
           </a>
         </header>
       </div>
