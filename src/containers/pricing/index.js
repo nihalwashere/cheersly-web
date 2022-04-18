@@ -1,30 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { CHEERSLY_SUPPORT_EMAIL } from "../../utils/constants";
 import StartFreeTrialButton from "../../components/StartFreeTrialButton";
-import InstallationChecklistDialog from "../../components/InstallationChecklistDialog";
 
 export default function Pricing() {
-  const [
-    shouldShowInstallationChecklistDialog,
-    setShouldShowInstallationChecklistDialog,
-  ] = useState(false);
-
   const handleAddToSlack = () => {
-    setShouldShowInstallationChecklistDialog(true);
-  };
-
-  const handleCloseInstallationChecklistDialog = () => {
-    setShouldShowInstallationChecklistDialog(false);
-  };
-
-  const handleInstall = (isMarketingEmailConsentChecked) => {
-    if (isMarketingEmailConsentChecked) {
-      window.location.href = process.env.REACT_APP_SLACK_OAUTH_EMAIL_SCOPE_URL;
-    } else {
-      window.location.href = process.env.REACT_APP_SLACK_OAUTH_URL;
-    }
-
-    handleCloseInstallationChecklistDialog();
+    window.location.href = process.env.REACT_APP_SIGNUP_URL;
   };
 
   return (
@@ -161,14 +141,6 @@ export default function Pricing() {
           </div>
         </div>
       </div>
-
-      {shouldShowInstallationChecklistDialog && (
-        <InstallationChecklistDialog
-          open={shouldShowInstallationChecklistDialog}
-          onClose={handleCloseInstallationChecklistDialog}
-          onInstall={handleInstall}
-        />
-      )}
     </div>
   );
 }

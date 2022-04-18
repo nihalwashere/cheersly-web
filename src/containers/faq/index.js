@@ -23,14 +23,6 @@ export default function FAQ() {
               &quot;/cheers&quot; - To cheer your peers.
               <br />
               <br />
-              &quot;/cheers poll&quot; - Ask a question to your peers and get a
-              poll (anonymous/non-anonymous).
-              <br />
-              <br />
-              &quot;/cheers feedback&quot; - Share feedback with your team
-              (anonymous/non-anonymous).
-              <br />
-              <br />
               &quot;/cheers help&quot; - Seek some help.
               <br />
               <br />

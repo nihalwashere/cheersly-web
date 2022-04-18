@@ -1,30 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import AddToSlackButton from "../../components/AddToSlackButton";
-import InstallationChecklistDialog from "../../components/InstallationChecklistDialog";
 import ImageAssets from "../../assets/images";
 
 export default function Home() {
-  const [
-    shouldShowInstallationChecklistDialog,
-    setShouldShowInstallationChecklistDialog,
-  ] = useState(false);
-
   const handleAddToSlack = () => {
-    setShouldShowInstallationChecklistDialog(true);
-  };
-
-  const handleCloseInstallationChecklistDialog = () => {
-    setShouldShowInstallationChecklistDialog(false);
-  };
-
-  const handleInstall = (isMarketingEmailConsentChecked) => {
-    if (isMarketingEmailConsentChecked) {
-      window.location.href = process.env.REACT_APP_SLACK_OAUTH_EMAIL_SCOPE_URL;
-    } else {
-      window.location.href = process.env.REACT_APP_SLACK_OAUTH_URL;
-    }
-
-    handleCloseInstallationChecklistDialog();
+    window.location.href = process.env.REACT_APP_SIGNUP_URL;
   };
 
   return (
@@ -34,12 +14,12 @@ export default function Home() {
           <div className="flex flex-col w-2/5">
             <header>
               <h1 className="text-5xl font-semibold">
-                Build an awesome work culture in Slack!
+                Build cheerful teams in Slack!
               </h1>
 
               <div className="text-2xl text-gray-600 mt-2">
-                Cheersly is a one stop shop to all your team&apos;s
-                communication needs.
+                Celebrate wins big and small. Employee recognition, celebrations
+                and rewards in one easy-to-use platform.
               </div>
             </header>
 
@@ -78,47 +58,6 @@ export default function Home() {
               each other &quot;cheers&quot; for work, teams gain real-time data
               on performance based on appreciation, and everyone begins to
               thrive a little more.
-            </p>
-          </section>
-        </div>
-
-        <div className="flex justify-between items-center mt-10">
-          <section className="flex flex-col w-2/5">
-            <h2 className="text-2xl font-semibold">Conduct polls</h2>
-            <p className="text-lg text-gray-600 mt-2">
-              Ask questions and receive insights that help you make a decision.
-            </p>
-          </section>
-
-          <figure className="w-3/5">
-            {/* eslint-disable-next-line */}
-            <img
-              src={ImageAssets.Illustration_6}
-              alt="Ask a question to your peers and get a poll (anonymous/non-anonymous)"
-              width="100%"
-              height="100%"
-            />
-          </figure>
-        </div>
-
-        <div className="flex justify-between items-center mt-10">
-          <figure className="w-3/5">
-            {/* eslint-disable-next-line */}
-            <img
-              src={ImageAssets.Illustration_2}
-              alt="Share feedback with your team (anonymous/non-anonymous)"
-              width="100%"
-              height="100%"
-            />
-          </figure>
-
-          <section className="flex flex-col w-2/5">
-            <h2 className="text-2xl font-semibold">Share feedback</h2>
-            <p className="text-lg text-gray-600 mt-2">
-              Encourage open and honest feedback, empower your team by valuing
-              their input. Anonymity provides employees the freedom to express
-              their opinions without having to face those mental blocks, getting
-              at the truth of their sentiments.
             </p>
           </section>
         </div>
@@ -194,11 +133,11 @@ export default function Home() {
           <div className="flex justify-between items-start mt-8">
             <section className="w-2/5">
               <h3 className="text-xl font-semibold">
-                Inculcate sweet competition
+                Improve your team’s communication
               </h3>
               <p className="text-gray-600 mt-1">
-                In a culture that lacks competitiveness, employees aren&apos;t
-                as encouraged to think outside the box.
+                Team building activities help to bridge gaps and build
+                relationships.
               </p>
             </section>
 
@@ -209,27 +148,6 @@ export default function Home() {
               <p className="text-gray-600 mt-1">
                 Recognize when employees align with your company values to
                 reinforce good behavior.
-              </p>
-            </section>
-          </div>
-
-          <div className="flex justify-between items-start mt-8">
-            <section className="w-2/5">
-              <h3 className="text-xl font-semibold">
-                Encourage open and honest feedback
-              </h3>
-              <p className="text-gray-600 mt-1">
-                Cheersly provides opportunities to share anonymous feedback.
-              </p>
-            </section>
-
-            <section className="w-2/5">
-              <h3 className="text-xl font-semibold">
-                Improve your team’s communication
-              </h3>
-              <p className="text-gray-600 mt-1">
-                Team building activities help to bridge gaps and build
-                relationships.
               </p>
             </section>
           </div>
@@ -245,14 +163,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {shouldShowInstallationChecklistDialog && (
-        <InstallationChecklistDialog
-          open={shouldShowInstallationChecklistDialog}
-          onClose={handleCloseInstallationChecklistDialog}
-          onInstall={handleInstall}
-        />
-      )}
     </div>
   );
 }
