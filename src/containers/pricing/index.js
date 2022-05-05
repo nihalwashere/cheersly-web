@@ -4,27 +4,27 @@ import StartFreeTrialButton from "../../components/StartFreeTrialButton";
 import InstallationChecklistDialog from "../../components/InstallationChecklistDialog";
 
 export default function Pricing() {
-  const [
-    shouldShowInstallationChecklistDialog,
-    setShouldShowInstallationChecklistDialog,
-  ] = useState(false);
+  // const [
+  //   shouldShowInstallationChecklistDialog,
+  //   setShouldShowInstallationChecklistDialog,
+  // ] = useState(false);
 
-  const handleAddToSlack = () => {
-    setShouldShowInstallationChecklistDialog(true);
-  };
+  // const handleAddToSlack = () => {
+  //   setShouldShowInstallationChecklistDialog(true);
+  // };
 
-  const handleCloseInstallationChecklistDialog = () => {
-    setShouldShowInstallationChecklistDialog(false);
-  };
+  // const handleCloseInstallationChecklistDialog = () => {
+  //   setShouldShowInstallationChecklistDialog(false);
+  // };
 
   const handleInstall = (isMarketingEmailConsentChecked) => {
-    if (isMarketingEmailConsentChecked) {
-      window.location.href = process.env.REACT_APP_SLACK_OAUTH_EMAIL_SCOPE_URL;
-    } else {
-      window.location.href = process.env.REACT_APP_SLACK_OAUTH_URL;
-    }
+    // if (isMarketingEmailConsentChecked) {
+    // window.location.href = process.env.REACT_APP_SLACK_OAUTH_EMAIL_SCOPE_URL;
+    // } else {
+    window.location.href = process.env.REACT_APP_SLACK_OAUTH_URL;
+    // }
 
-    handleCloseInstallationChecklistDialog();
+    // handleCloseInstallationChecklistDialog();
   };
 
   return (
@@ -117,7 +117,7 @@ export default function Pricing() {
         </div>
       </div>
 
-      <StartFreeTrialButton onClick={handleAddToSlack} />
+      <StartFreeTrialButton onClick={handleInstall} />
 
       <div className="mt-12 mb-12 flex flex-col items-center w-1/2">
         <div className="text-2xl font-semibold">Pricing Questions</div>
@@ -162,13 +162,13 @@ export default function Pricing() {
         </div>
       </div>
 
-      {shouldShowInstallationChecklistDialog && (
+      {/* {shouldShowInstallationChecklistDialog && (
         <InstallationChecklistDialog
           open={shouldShowInstallationChecklistDialog}
           onClose={handleCloseInstallationChecklistDialog}
           onInstall={handleInstall}
         />
-      )}
+      )} */}
     </div>
   );
 }

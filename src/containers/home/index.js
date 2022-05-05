@@ -4,27 +4,26 @@ import InstallationChecklistDialog from "../../components/InstallationChecklistD
 import ImageAssets from "../../assets/images";
 
 export default function Home() {
-  const [
-    shouldShowInstallationChecklistDialog,
-    setShouldShowInstallationChecklistDialog,
-  ] = useState(false);
+  // const [
+  //   shouldShowInstallationChecklistDialog,
+  //   setShouldShowInstallationChecklistDialog,
+  // ] = useState(false);
 
-  const handleAddToSlack = () => {
-    setShouldShowInstallationChecklistDialog(true);
-  };
+  // const handleAddToSlack = () => {
+  //   setShouldShowInstallationChecklistDialog(true);
+  // };
 
-  const handleCloseInstallationChecklistDialog = () => {
-    setShouldShowInstallationChecklistDialog(false);
-  };
+  // const handleCloseInstallationChecklistDialog = () => {
+  //   setShouldShowInstallationChecklistDialog(false);
+  // };
 
   const handleInstall = (isMarketingEmailConsentChecked) => {
-    if (isMarketingEmailConsentChecked) {
-      window.location.href = process.env.REACT_APP_SLACK_OAUTH_EMAIL_SCOPE_URL;
-    } else {
-      window.location.href = process.env.REACT_APP_SLACK_OAUTH_URL;
-    }
-
-    handleCloseInstallationChecklistDialog();
+    // if (isMarketingEmailConsentChecked) {
+    //   window.location.href = process.env.REACT_APP_SLACK_OAUTH_EMAIL_SCOPE_URL;
+    // } else {
+    window.location.href = process.env.REACT_APP_SLACK_OAUTH_URL;
+    // }
+    // handleCloseInstallationChecklistDialog();
   };
 
   return (
@@ -44,7 +43,7 @@ export default function Home() {
             </header>
 
             <div className="mt-8">
-              <AddToSlackButton type="dark" onClick={handleAddToSlack} />
+              <AddToSlackButton type="dark" onClick={handleInstall} />
             </div>
           </div>
 
@@ -241,18 +240,18 @@ export default function Home() {
           </h2>
 
           <div className="mt-10">
-            <AddToSlackButton type="dark" onClick={handleAddToSlack} />
+            <AddToSlackButton type="dark" onClick={handleInstall} />
           </div>
         </div>
       </div>
 
-      {shouldShowInstallationChecklistDialog && (
+      {/* {shouldShowInstallationChecklistDialog && (
         <InstallationChecklistDialog
           open={shouldShowInstallationChecklistDialog}
           onClose={handleCloseInstallationChecklistDialog}
           onInstall={handleInstall}
         />
-      )}
+      )} */}
     </div>
   );
 }
