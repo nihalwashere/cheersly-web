@@ -29,95 +29,29 @@ export default function Pricing() {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="flex justify-center text-4xl font-semibold mb-4">
-        Pricing
-      </div>
-      <h1 className="flex text-3xl">
-        Simple, transparent pricing for teams of all sizes!
-      </h1>
-      <div className="flex mt-4 mb-4">
-        Free 14-day trial · No credit card required
-      </div>
+      <div className="text-center mt-10">
+        <h1 className="text-2xl font-semibold">
+          Simple, transparent pricing for teams of all sizes!
+        </h1>
 
-      <div>
-        <div className="flex flex-col items-center justify-center w-64 h-96 bg-yellow-300 rounded border-2 border-current">
-          <div className="text-2xl font-semibold pt-2 pb-2">Basic</div>
-
-          <div className="text-4xl font-semibold pt-2 pb-2">Free forever</div>
-
-          <div className="text-base">This or That</div>
-
-          <div className="text-base">Icebreaker Questions</div>
-
-          <div className="text-base">Two Truths and a Lie</div>
-
-          <div className="text-base">Stone Paper Scissors</div>
-
-          <div className="text-base">Tic Tac Toe</div>
+        <div className="text-xl text-c-gray mt-4">
+          Get all features for a single, predictable price and unlimited users
         </div>
       </div>
 
-      <div className="flex justify-between items-center w-11/12 mt-12 mb-12">
-        <div className="flex flex-col items-center justify-center w-64 h-96 bg-yellow-300 rounded border-2 border-current">
-          <div className="text-2xl font-semibold pt-2 pb-2">Pro</div>
+      <div className="flex justify-center mt-10">
+        <div>
+          <p className="text-5xl font-semibold text-center">$29 / month</p>
 
-          <div className="text-4xl font-semibold pt-2 pb-2">$29 / month</div>
+          <div className="flex flex-col items-center mt-4">
+            <div className="text-xl text-c-gray mb-10">
+              Free 14-day trial · No credit card required
+            </div>
 
-          <div className="text-base">Every thing in the basic plan</div>
-
-          <div className="text-2xl font-semibold">+</div>
-
-          <div className="text-base">Polls</div>
-
-          <div className="text-base">Feedback</div>
-
-          <div className="text-base">Peer Recognition</div>
-
-          <div className="text-base">Rewards</div>
-
-          <div className="text-base font-semibold mt-2 pb-2">
-            for upto 100 users
+            <StartFreeTrialButton onClick={handleInstall} />
           </div>
         </div>
-
-        <div className="flex flex-col items-center justify-center w-64 h-96 bg-yellow-300 rounded border-2 border-current">
-          <div className="text-2xl font-semibold pt-2 pb-2">Standard</div>
-
-          <div className="text-4xl font-semibold pt-2 pb-2">$49 / month</div>
-
-          <div className="text-base">Every thing in the pro plan</div>
-
-          <div className="text-base font-semibold">for upto 250 users</div>
-        </div>
-
-        <div className="flex flex-col items-center justify-center w-64 h-96 bg-yellow-300 rounded border-2 border-current">
-          <div className="text-2xl font-semibold pt-2 pb-2">Premium</div>
-
-          <div className="text-4xl font-semibold pt-2 pb-2">$99 / month</div>
-
-          <div className="text-base">Every thing in the pro plan</div>
-
-          <div className="text-base font-semibold">for upto 500 users</div>
-        </div>
-
-        <div className="flex flex-col items-center justify-center w-64 h-96 bg-yellow-300 rounded border-2 border-current">
-          <div className="text-2xl font-semibold pt-2 pb-2">Enterprise</div>
-
-          <div className="font-semibold pt-2 pb-2">
-            Contact{" "}
-            <a
-              href={`mailto:${CHEERSLY_SUPPORT_EMAIL}?subject=Privacy Policy`}
-              className="underline"
-            >
-              {CHEERSLY_SUPPORT_EMAIL}
-            </a>
-          </div>
-
-          <div className="text-base font-semibold">more than 500 users</div>
-        </div>
       </div>
-
-      <StartFreeTrialButton onClick={handleInstall} />
 
       <div className="mt-12 mb-12 flex flex-col items-center w-1/2">
         <div className="text-2xl font-semibold">Pricing Questions</div>
