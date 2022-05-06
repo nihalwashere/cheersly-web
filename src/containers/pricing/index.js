@@ -1,32 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { CHEERSLY_SUPPORT_EMAIL } from "../../utils/constants";
 import StartFreeTrialButton from "../../components/StartFreeTrialButton";
-import InstallationChecklistDialog from "../../components/InstallationChecklistDialog";
 
 export default function Pricing() {
-  // const [
-  //   shouldShowInstallationChecklistDialog,
-  //   setShouldShowInstallationChecklistDialog,
-  // ] = useState(false);
-
-  // const handleAddToSlack = () => {
-  //   setShouldShowInstallationChecklistDialog(true);
-  // };
-
-  // const handleCloseInstallationChecklistDialog = () => {
-  //   setShouldShowInstallationChecklistDialog(false);
-  // };
-
-  const handleInstall = (isMarketingEmailConsentChecked) => {
-    // if (isMarketingEmailConsentChecked) {
-    // window.location.href = process.env.REACT_APP_SLACK_OAUTH_EMAIL_SCOPE_URL;
-    // } else {
-    window.location.href = process.env.REACT_APP_SLACK_OAUTH_URL;
-    // }
-
-    // handleCloseInstallationChecklistDialog();
-  };
-
   return (
     <div className="flex flex-col items-center">
       <div className="text-center mt-10">
@@ -48,7 +24,7 @@ export default function Pricing() {
               Free 14-day trial · No credit card required
             </div>
 
-            <StartFreeTrialButton onClick={handleInstall} />
+            <StartFreeTrialButton />
           </div>
         </div>
       </div>
@@ -68,6 +44,18 @@ export default function Pricing() {
             If you don&apos;t upgrade and your trial expires, people will
             receive a response from Cheersly letting them know the trial is
             over.
+          </div>
+        </div>
+
+        <div className="mt-4">
+          <div className="text-lg font-semibold">
+            How do you calculate the number of people on my team I have to pay
+            for? Do I have to pay for everyone on my Slack team?
+          </div>
+
+          <div className="text-base">
+            There is no bar on the number of users using Cheersly. You pay $29 a
+            month irrespective of the total number of users on your team.
           </div>
         </div>
 
@@ -94,15 +82,19 @@ export default function Pricing() {
             with our services. Just contact us at {CHEERSLY_SUPPORT_EMAIL}.
           </div>
         </div>
-      </div>
 
-      {/* {shouldShowInstallationChecklistDialog && (
-        <InstallationChecklistDialog
-          open={shouldShowInstallationChecklistDialog}
-          onClose={handleCloseInstallationChecklistDialog}
-          onInstall={handleInstall}
-        />
-      )} */}
+        <div className="mt-4">
+          <div className="text-lg font-semibold">
+            How do I cancel my subscription?
+          </div>
+
+          <div className="text-base">
+            Uninstall Cheersly from your Slack workspace and contact us at{" "}
+            {CHEERSLY_SUPPORT_EMAIL} to cancel your subscription. No questions
+            asked!
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

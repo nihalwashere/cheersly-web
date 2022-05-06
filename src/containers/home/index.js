@@ -1,31 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import AddToSlackButton from "../../components/AddToSlackButton";
-import InstallationChecklistDialog from "../../components/InstallationChecklistDialog";
 import ImageAssets from "../../assets/images";
 
 export default function Home() {
-  // const [
-  //   shouldShowInstallationChecklistDialog,
-  //   setShouldShowInstallationChecklistDialog,
-  // ] = useState(false);
-
-  // const handleAddToSlack = () => {
-  //   setShouldShowInstallationChecklistDialog(true);
-  // };
-
-  // const handleCloseInstallationChecklistDialog = () => {
-  //   setShouldShowInstallationChecklistDialog(false);
-  // };
-
-  const handleInstall = (isMarketingEmailConsentChecked) => {
-    // if (isMarketingEmailConsentChecked) {
-    //   window.location.href = process.env.REACT_APP_SLACK_OAUTH_EMAIL_SCOPE_URL;
-    // } else {
-    window.location.href = process.env.REACT_APP_SLACK_OAUTH_URL;
-    // }
-    // handleCloseInstallationChecklistDialog();
-  };
-
   return (
     <div>
       <div className="m-8">
@@ -43,7 +20,7 @@ export default function Home() {
             </header>
 
             <div className="mt-8">
-              <AddToSlackButton type="dark" onClick={handleInstall} />
+              <AddToSlackButton type="dark" />
             </div>
           </div>
 
@@ -240,18 +217,10 @@ export default function Home() {
           </h2>
 
           <div className="mt-10">
-            <AddToSlackButton type="dark" onClick={handleInstall} />
+            <AddToSlackButton type="dark" />
           </div>
         </div>
       </div>
-
-      {/* {shouldShowInstallationChecklistDialog && (
-        <InstallationChecklistDialog
-          open={shouldShowInstallationChecklistDialog}
-          onClose={handleCloseInstallationChecklistDialog}
-          onInstall={handleInstall}
-        />
-      )} */}
     </div>
   );
 }
