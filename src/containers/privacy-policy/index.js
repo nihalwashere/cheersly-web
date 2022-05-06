@@ -143,7 +143,7 @@ export default function PrivacyPolicy() {
             Security and storage
             <ul>
               <li>
-                We use Heroku as hosting provider in the United States to store
+                We use Render as hosting provider in the United States to store
                 and protect your information. They are up to date and setup with
                 the latest security standards and undergo recurring security
                 assessments to protect your information.
@@ -201,13 +201,13 @@ export default function PrivacyPolicy() {
           <p className="mb-5 margin-top-10">
             <ul className="list-disc ml-5">
               <li>
-                Heroku{" "}
+                Render{" "}
                 <a
-                  href="https://www.heroku.com"
+                  href="https://render.com/"
                   target="_blank"
                   rel="noreferrer noopener"
                 >
-                  (https://www.heroku.com)
+                  (https://render.com/)
                 </a>
               </li>
               <ul className="list-disc ml-5">

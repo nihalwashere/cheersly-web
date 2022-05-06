@@ -3,10 +3,6 @@ import AddToSlackButton from "../../components/AddToSlackButton";
 import ImageAssets from "../../assets/images";
 
 export default function Home() {
-  const handleAddToSlack = () => {
-    window.location.href = process.env.REACT_APP_SIGNUP_URL;
-  };
-
   return (
     <div>
       <div className="m-8">
@@ -24,7 +20,7 @@ export default function Home() {
             </header>
 
             <div className="mt-8">
-              <AddToSlackButton type="dark" onClick={handleAddToSlack} />
+              <AddToSlackButton type="dark" />
             </div>
           </div>
 
@@ -159,7 +155,7 @@ export default function Home() {
           </h2>
 
           <div className="mt-10">
-            <AddToSlackButton type="dark" onClick={handleAddToSlack} />
+            <AddToSlackButton type="dark" />
           </div>
         </div>
       </div>
