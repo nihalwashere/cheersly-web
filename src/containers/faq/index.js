@@ -109,35 +109,6 @@ export default function FAQ() {
           </div>
 
           <div className="mb-6">
-            <div name="faq-question" className="flex text-xl font-semibold">
-              6. Is my team&apos;s data safe?
-            </div>
-
-            <p className="mt-2 ml-7">
-              Your data is encrypted at rest with AES-256, block-level storage
-              encryption, and cloud-hosted by Heroku. You can read their{" "}
-              <a
-                rel="noreferrer noopener"
-                target="_blank"
-                href="https://www.heroku.com/policy/security"
-              >
-                security policy here
-              </a>
-              .
-              <br />
-              <br />
-              You can read our
-              <a rel="noreferrer noopener" target="_blank" href="/privacy">
-                Privacy Policy
-              </a>{" "}
-              and our
-              <a rel="noreferrer noopener" target="_blank" href="/tos">
-                {" "}
-                Terms of Service
-              </a>
-              .
-            </p>
-
             <p className="text-base mt-10">
               Have a question that isn&apos;t listed? Email us at{" "}
               {CHEERSLY_SUPPORT_EMAIL}
