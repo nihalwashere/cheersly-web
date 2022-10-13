@@ -11,13 +11,15 @@ export default function Pricing() {
         </h1>
 
         <div className="text-xl text-c-gray mt-4">
-          Get all features for a single, predictable price and unlimited users
+          Get all features for a single, predictable price
         </div>
       </div>
 
       <div className="flex justify-center mt-10">
         <div>
-          <p className="text-5xl font-semibold text-center">$29 / month</p>
+          <p className="text-5xl font-semibold text-center">
+            $3 / user / month
+          </p>
 
           <div className="flex flex-col items-center mt-4">
             <div className="text-xl text-c-gray mb-10">
@@ -54,8 +56,7 @@ export default function Pricing() {
           </div>
 
           <div className="text-base">
-            There is no bar on the number of users using Cheersly. You pay $29 a
-            month irrespective of the total number of users on your team.
+            You pay for only the people you have selected.
           </div>
         </div>
 
