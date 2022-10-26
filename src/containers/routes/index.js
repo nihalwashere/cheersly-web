@@ -9,6 +9,7 @@ import FAQ from "../faq";
 import About from "../about";
 import TermsOfService from "../tos";
 import PrivacyPolicy from "../privacy-policy";
+import AppInstalled from "../app-installed";
 
 const RoutesContainer = () => {
   return (
@@ -25,6 +26,8 @@ const RoutesContainer = () => {
         <Route exact path="/tos" element={<TermsOfService />} />
 
         <Route exact path="/privacy" element={<PrivacyPolicy />} />
+
+        <Route exact path="/app-installed" element={<AppInstalled />} />
 
         <Route exact path="*" element={<PageNotFound />} />
       </Routes>
