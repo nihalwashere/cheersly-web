@@ -2,7 +2,7 @@ import React from "react";
 
 export default function StartFreeTrialButton() {
   const handleInstall = () => {
-    window.location.href = process.env.REACT_APP_SIGNUP_URL;
+    window.location.href = process.env.REACT_APP_SLACK_OAUTH_URL;
   };
 
   return (
