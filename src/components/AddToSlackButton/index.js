@@ -3,7 +3,7 @@ import ImageAssets from "../../assets/images";
 
 export default function AddToSlackButton() {
   const handleInstall = () => {
-    window.location.href = process.env.REACT_APP_SLACK_OAUTH_URL;
+    window.location.href = process.env.REACT_APP_SIGNUP_URL;
   };
 
   return (
