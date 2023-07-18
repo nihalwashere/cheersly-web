@@ -39,18 +39,6 @@ export default function NavBar() {
         </span>
 
         <span className="text-2xl font-medium cursor-pointer">
-          <a href="/pricing" className="no-default-link">
-            Pricing
-          </a>
-        </span>
-
-        <span className="text-2xl font-medium cursor-pointer">
-          <a href="/faq" className="no-default-link">
-            FAQ
-          </a>
-        </span>
-
-        <span className="text-2xl font-medium cursor-pointer">
           <a href="/about" className="no-default-link">
             About
           </a>
